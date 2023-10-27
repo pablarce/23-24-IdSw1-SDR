@@ -22,3 +22,4 @@ Repositorio para el proyecto de la asignatura
 - Accesos
 - Pagos
 
+<span> Se pueden visualizar una sección de los apuntes de la primera sesion aqui: https://docs.google.com/document/d/17JI_XzMqjRMuR5j1B4SIyyXyCBYp5SDdF0JmkFQywmQ/edit <span/>
