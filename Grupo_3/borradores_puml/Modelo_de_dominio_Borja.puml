@@ -1,0 +1,17 @@
+@startuml PADEL
+
+Pista - Horario
+Pista -- Puerta
+Pista -- Iluminacion
+Iluminacion - Horario
+Puerta -- Dispositivo
+Dispositivo -- Codigo
+Dispositivo -- QR
+User -- Pago
+User -- Cancelacion
+Pago -- Codigo 
+Pago -- QR
+Cancelacion -- QR
+Cancelacion -- Codigo
+
+@enduml
