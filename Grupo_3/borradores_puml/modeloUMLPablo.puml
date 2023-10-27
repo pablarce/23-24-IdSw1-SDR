@@ -1,0 +1,38 @@
+@startuml
+class GestionReservas
+
+GestionReservas --> Padel
+GestionReservas --> Gimnasio
+GestionReservas --> Usuario
+
+Gimnasio --> Reserva
+Gimnasio --> Acceso
+
+Padel --> Pista
+
+Pista --> Reserva
+Pista --> Acceso
+Pista --> Iluminacion
+
+Reserva --> Pago
+Reserva --> Cancelacion
+Reserva --> Notificacion
+Cancelacion --> Notificacion
+Pago --> Cancelacion
+
+Usuario --> Administrador
+Usuario --> Cliente
+
+Cliente --> Reserva
+Cliente --> Alumno
+Cliente --> Profesor
+Cliente --> Pago
+Administrador --> Permisos
+Alumno --> Restricciones
+Profesor --> Restricciones
+
+Acceso --> Electricidad
+Acceso --> Wifi
+Iluminacion --> Electricidad
+
+@enduml
