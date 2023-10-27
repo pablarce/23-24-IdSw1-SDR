@@ -14,17 +14,17 @@ entity "Interfaz de Usuario" as UI
 entity "Proceso de Pago" as Pago 
 entity "Notificaciones" as Notif
 
-Reservas -- Pista : "tiene"
-Reservas -- Usuario : "realizada por"
-Cancels -- Reservas : "gestiona"
-Universidad -- Pista : "posee"
-App -- UI : "muestra"
-App -- Pago : "gestiona"
-App -- Notif : "envía"
-App -- Usuario : "gestiona"
-Pago -- Reservas : "aplica a"
-Web -- SG : "contiene"
-SG -- App : "implementa"
+Reservas --> Pista : "solicita"
+Reservas --> Usuario : "realizada por"
+Cancels <-- Reservas : "gestiona"
+Universidad --> Pista : "contiene"
+App --> UI : "muestra"
+App --> Reservas : "gestiona"
+App --> Notif : "envía"
+App --> Usuario : "gestiona"
+Pago <-- Reservas : "requiere"
+Web --> SG : "contiene"
+SG --> App : "implementa"
 
 }
 
