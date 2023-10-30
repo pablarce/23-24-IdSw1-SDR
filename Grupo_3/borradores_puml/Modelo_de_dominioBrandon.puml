@@ -1,0 +1,63 @@
+@startuml
+package "Modelo de Dominio: Reserva de Canchas" {
+
+entity "Cancha" as Cancha {
++ Libre
++ Ocupada
++ En mantenimiento
+
+}
+
+entity "Reservación" as Reservacion {
++ Fecha 
++ Hora
++ Confirmación 
++ Cancelación 
++ Pago
++ Máximo una semana de antelación
+}
+
+entity "Usuario" as Usuario {
++ DNI
++ Tarjeta
++ Nombre
++ Correo de la Universidad
++ Usuario administrativo
+}
+
+entity "Uneatlantico" as Universidad {
+}
+
+entity "App Móvil" as App {
++ Usuario
++ Tus reservas
++ Configuración
++ Canchas
+}
+
+entity "Interfaz de Usuario" as UI {
++ Tarjeta
++ Configuración
+}
+
+entity "Proceso de Pago" as Pago {
+  + Tarifa: 15 euros/1.5 horas
+  + Tarifa: 8 euros/1 hora
+}
+
+entity "Notificaciones" as Notif {
++ Inicio de reserva
++ Fin de resrva
+}
+
+Reservacion -- Cancha : "tiene"
+Reservacion -- Usuario : "realizada por"
+Universidad -- Cancha : "posee"
+App -- UI : "muestra"
+App -- Pago : "gestiona"
+App -- Notif : "envía"
+App -- Usuario : "gestiona"
+Pago -- Reservacion : "aplica a"
+
+}
+@enduml
