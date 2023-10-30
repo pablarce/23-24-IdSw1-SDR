@@ -1,17 +1,81 @@
 @startuml PADEL
 
-Pista - Horario
-Pista -- Puerta
-Pista -- Iluminacion
-Iluminacion - Horario
-Puerta -- Dispositivo
-Dispositivo -- Codigo
-Dispositivo -- QR
-User -- Pago
-User -- Cancelacion
-Pago -- Codigo 
-Pago -- QR
-Cancelacion -- QR
-Cancelacion -- Codigo
+!define Entity class
+!define EntityBG color #E8D5B8
+!define EntityBorder color #D1A77B
+
+skinparam class {
+    BackgroundColor EntityBG    
+    FontSize 14
+}
+
+package "Universidad Europea del Atlántico - Reservas de Pádel" {
+
+    class Pista {
+        +ID: int
+        Nombre: string
+    }
+
+    class Horario {
+        +ID: int
+        HoraInicio: time
+        HoraFin: time
+    }
+
+    class Puerta {
+        +ID: int
+        Numero: int
+    }
+
+    class Iluminacion {
+        +ID: int
+        Tipo: string
+    }
+
+    class Dispositivo {
+        +ID: int
+        Nombre: string
+    }
+
+    class Codigo {
+        +ID: int
+        Valor: string
+    }
+
+    class QR {
+        +ID: int
+        CodigoQR: string
+    }
+
+    class User {
+        +ID: int
+        Nombre: string
+    }
+
+    class Pago {
+        +ID: int
+        Monto: decimal
+    }
+
+    class Cancelacion {
+        +ID: int
+        Motivo: string
+    }
+
+    Pista -- Horario: Horario disponible
+    Pista -- Puerta: Acceso por Puerta
+    Pista -- Iluminacion: Tipo de Iluminación
+    Iluminacion -- Horario: Horario de funcionamiento
+    Puerta -- Dispositivo: Control de acceso mediante Dispositivo
+    Dispositivo -- Codigo: Código de acceso
+    Dispositivo -- QR: Código QR de acceso
+    User -- Pago: Realiza Pagos
+    User -- Cancelacion: Realiza Cancelaciones
+    Pago -- Codigo: Asociado a Código
+    Pago -- QR: Asociado a Código QR
+    Cancelacion -- QR: Asociado a Código QR
+    Cancelacion -- Codigo: Asociado a Código
+
+}
 
 @enduml
