@@ -65,7 +65,7 @@ package "Universidad Europea del Atlántico - Reservas de Pádel" {
     Pista -- Horario: Horario disponible
     Pista -- Puerta: Acceso por Puerta
     Pista -- Iluminacion: Tipo de Iluminación
-    Iluminacion -- Horario: Horario de funcionamiento
+    Iluminacion - Horario: Horario de funcionamiento
     Puerta -- Dispositivo: Control de acceso mediante Dispositivo
     Dispositivo -- Codigo: Código de acceso
     Dispositivo -- QR: Código QR de acceso
