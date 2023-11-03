@@ -1,0 +1,86 @@
+@startuml
+entity Pistas {
+  + nombre
+  + capacidad
+}
+
+entity Padel {
+  + CapasidadMaxima
+}
+
+entity Polideportivo {
+  + CapasidadMaxima
+}
+
+entity Voleibol {
+  + CapasidadMaximaipo
+}
+
+entity Calendario {
+  + eventos
+}
+
+entity Usuario {
+  + nombre
+  + email
+  + telefono
+}
+
+entity Pagos {
+  + metodoPago
+  + monto
+}
+
+entity Factura {
+  + fechaEmision
+  + total
+}
+
+entity Tarifas {
+  + precioHora
+}
+
+entity Disponibilidad {
+  + horasDisponibles
+}
+
+entity Reserva {
+  + fechaInicio
+  + fechaFin
+}
+
+entity CancelarReserva {
+}
+
+entity Fecha {
+  + dia
+  + mes
+  + año
+}
+
+entity Horas {
+  + hora
+  + minutos
+}
+
+
+
+SistemaDeReservas --- Usuario: Tiene
+Usuario --- Reserva: Hace
+Reserva -L- Calendario: tiene
+Usuario -R- Pagos: Realiza
+Pagos --- Factura: Que genera 
+Factura --- Usuario: Que se le entrega
+Reserva --- Pistas: Se realiza en
+Reserva -L- CancelarReserva: Se puede cancelar
+Pistas--- Padel
+Pistas--- Polideportivo
+Pistas--- Voleibol
+Pistas -R- Tarifas: Tiene
+Voleibol --- Disponibilidad: Tiene
+Polideportivo --- Disponibilidad: Tiene
+Padel --- Disponibilidad: Tiene
+Disponibilidad--- Calendario: Tiene
+Calendario --- Fecha
+Calendario --- Horas
+@enduml

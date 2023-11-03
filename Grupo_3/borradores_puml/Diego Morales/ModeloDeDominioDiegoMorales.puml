@@ -1,0 +1,32 @@
+@startuml 
+entity App { } 
+entity Canchas { } 
+entity Cliente { } 
+entity Pago { } 
+entity Canchas{} 
+entity Cliente{} 
+entity Pago{} 
+entity Reserva{} 
+entity Cuenta{} 
+entity Permiso{} 
+entity Cancelar{} 
+entity Fecha{} 
+entity Hora{} 
+entity UsuarioAdmin{} 
+entity UsuarioNormal{} 
+entity Tarifa{} 
+entity Bono{} 
+App -- Canchas : Asigna 
+App -- Cliente : Realiza 
+App -- Pago : Realiza 
+Canchas -- Reserva 
+Reserva -- Fecha : Tiene 
+Reserva -- Hora : Tiene 
+Hora -- Tarifa : Tiene 
+Tarifa -- Bono : Tiene 
+Cliente -- Cuenta : Tiene 
+Cliente -- Permiso : Tiene 
+Cliente -- Cancelar : Puede 
+Cliente -- Pago : Realiza 
+Cuenta -- UsuarioNormal 
+Cuenta -- UsuarioAdmin @enduml
