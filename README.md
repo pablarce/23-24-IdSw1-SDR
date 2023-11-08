@@ -1,25 +1,38 @@
-# Sesiones de requisitado
+# Proyecto Ingeniería de Software
+Repositorio para el proyecto de la asignatura
+## Joseph Alemany (Cliente)
+# Resumen
+- Se desarrolla el modelo del dominio de una problemática propuesta por un cliente, la cual es, poder manejar las reservas de la cancha de padel de la universidad europea del atlantico que sea de facil uso para gestionar las reservas, hacer seguimiento del mismo, realizar cobros de estas reservas e informar al usuario su tiempo limite de uso en las canchas de padel, ademas que todos los usarios deberan pertenecer al mismo dominio.
+# Introducción
+- Gestionar las reservas de la cancha de padel de la universidad 
+# Glosario
+| Entidad     | Definición                                                                                                                                                                                                                |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Usuario     | Todo aquel que interactúe con la aplicación, ya sea como administrador para gestionarla o como un usuario tecnico que desee ver información de las redes.                                                                 |
+| Registro         |Espacio  virtual donde se deja constancia de un hecho, o el acto de hacer lo mismo |
+| Ubicación   | Es el lugar físico en donde se encuentran las pistas de padel.                                                                                                                                                                          |
+| Tarifas      | Precio unitario fijado de forma oficial el administrador para los servicios brindados.                                                  |                                                                        |                                                                                                        |
+| Dominio      | Espacio el cual las personas que quieran hacer uso de las pistas deben pertenecer.                                                                                                                                |
 
-Este es el repositorio de las sesiones de requisitado de la asignatura de Ingeniería del Software I de UNEATLANTICO.
+# Requisitos previos
+- Pistas de padel
+- Usuario/Administrador
+- Calendario/Horario
+- Tarifas
+- Accesos
+- Pagos
 
-Se desarrolla, en un caso real, la disciplina de requisitado, que es la puerta de entrada al desarrollo de una solución basada en software. 
+# Diagrama de Estados de una Reserva
+- Diagrama de estados por las que pasa una Reserva
 
-> Se ha demostrado, empírica y académicamente, que un porcentaje no menor de proyectos de software que fracasan lo hacen porque está mal llevada esta fase.
+            
+  ![Imagen](imagenes/DiagramadeEstadodeunaReserva.png)
 
-<div align=center>
 
-||
-|-|
-![](/imagenes/modelosUML/trabajoRepos.svg)
+## Actores y Casos de Uso
+# Actores
+| Actor                 | Descripción                                    |
+| --------------------- | ---------------------------------------------- |
+| **Administrador**     | Gestiona reservas y usuarios         |
+| **Usuarios**          | Realiza reservas               |
 
-</div>
-
-## Algunas reglas
-
-- Reuniones oficiales (en horas de clase)
-  - A estas debe asistir el 100% de los integrantes de los grupos.
-  - Si a las reuniones asiste menos del 80% del grupo, la reunión se cancela y el grupo se da por cerrado. La evaluación se realiza de la forma tradicional (examen parcial, examen final).
-- Reuniones extra: de acuerdo a lo pautado con el cliente.
-- Se recomienda utilizar el repo del coordinador del grupo y las herramientas de GitHub para gestionar las reuniones y comunicaciones con el cliente, haciendo racional uso de la trazabilidad.
-- Las imágenes, en la medida de lo posible en formato plantUML. 
-  - Todas las fuentes en la carpeta modelosUML y las imágenes exportadas, en formato svg.
