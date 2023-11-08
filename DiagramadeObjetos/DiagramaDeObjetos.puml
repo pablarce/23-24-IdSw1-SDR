@@ -1,0 +1,77 @@
+@startuml
+entity Pistas {
+  + nombre: "Padel"
+  + capacidad "4"
+}
+
+entity Padel {
+  + CapasidadMaxima: "4"
+}
+
+
+
+entity Calendario {
+  + eventos: "Libre"
+}
+
+entity Usuario {
+  + nombre: "JonDoe"
+  + email: "Jon.Doe@alumnos.unetalantico.es"
+  + telefono:"+34 123456789"
+}
+
+entity Pagos {
+  + metodoDePago: "Trajeta de Credito"
+  + monto: "8€"
+}
+
+entity Factura {
+  + fechaEmision: "01/01/2024"
+  + total: "8€"
+}
+
+entity Tarifas {
+  + precioHora:"8€"
+}
+
+entity Disponibilidad {
+  + horasDisponibles:"10:00 - 19:00"
+}
+
+entity Reserva {
+  + fechaInicio: "10:00"
+  + fechaFin:"11:00"
+}
+
+entity CancelarReserva {
+}
+
+entity Fecha {
+  + dia: "08"
+  + mes: "01"
+  + año: "2024"
+}
+
+entity Horas {
+  + hora: "10:00"
+  + minutos "11:00"
+}
+
+
+
+SistemaDeReservas --- Usuario: Tiene
+Usuario --- Reserva: Hace
+Reserva -L- Calendario: tiene
+Usuario -R- Pagos: Realiza
+Pagos --- Factura: Que genera 
+Factura --- Usuario: Que se le entrega
+Reserva --- Pistas: Se realiza en
+Reserva -L- CancelarReserva: Se puede cancelar
+Pistas--- Padel
+
+Pistas -R- Tarifas: Tiene
+Padel --- Disponibilidad: Tiene
+Disponibilidad--- Calendario: Tiene
+Calendario --- Fecha
+Calendario --- Horas
+@enduml
