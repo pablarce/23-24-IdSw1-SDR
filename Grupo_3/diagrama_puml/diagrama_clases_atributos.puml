@@ -36,8 +36,10 @@ entity "Interfaz de Usuario" as UI {
     + Configuración
 }
 entity "Proceso de Pago" as Pago {
-    + Tarifa: 15 euros/1.5 horas
+    + Tarifa: 12 euros/1.5 horas
     + Tarifa: 8 euros/1 hora
+    + Oferta 1: 10h 70 euros ?
+    + 
 }
 entity "Notificaciones" as Notif {
     + Inicio de reserva
