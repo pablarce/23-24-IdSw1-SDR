@@ -1,0 +1,10 @@
+@startuml SistemaReservas
+(*) --> "SistemaReservas"
+    if "Estado_Reserva" then
+      ->[Reservado] (*)
+ 
+    else
+      -->[NoReservado] "Crea_Reserva"
+      --> (*)
+    endif
+@enduml
