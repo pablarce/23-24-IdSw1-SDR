@@ -1,0 +1,97 @@
++------------------------+
+|  Sistema de Reservas   |
+| de Pistas Uneatlantico |
++------------------------+
+
+Actores:
+- Usuario
+- Administrador
+
+Casos de Uso:
+1. Realizar Reserva
+   - El Usuario busca una pista disponible
+   - El Usuario selecciona una fecha y hora
+   - El Usuario confirma la reserva
+
+2. Cancelar Reserva
+   - El Usuario ve sus reservas activas
+   - El Usuario selecciona una reserva para cancelar
+   - El Usuario confirma la cancelación
+
+3. Administrar Pistas (Administrador)
+   - El Administrador agrega una nueva pista
+   - El Administrador modifica información de una cancha
+   - El Administrador elimina una cancha
+
+4. Ver Disponibilidad de las Pistas
+   - El Usuario busca las pistas disponibles
+   - El Usuario filtra por tipo, horario, etc.
+   - El Usuario ve las pistas disponibles
+
+5. Ver Reservas (Administrador)
+   - El Administrador ve todas las reservas
+   - El Administrador filtra y busca reservas
+   - El Administrador actualiza el estado de las reservas
+
+6. Gestionar Usuarios (Administrador)
+   - El Administrador agrega un nuevo usuario
+   - El Administrador modifica información de un usuario
+   - El Administrador desactiva o elimina un usuario
+
+7. Modificar Reserva ???
+   - El Usuario accede a sus reservas activas
+   - El Usuario selecciona una reserva para modificar
+   - El Usuario realiza cambios en la fecha, hora o cancha
+   - El Usuario confirma la modificación
+
+8. Recibir Notificaciones de Reservas
+   - El Usuario elige recibir notificaciones de recordatorio para sus reservas
+   - El Usuario recibe notificaciones antes de la fecha y hora de la reserva
+
+9. Ver Historial de Reservas
+    - El Usuario accede a su historial de reservas pasadas
+    - El Usuario filtra y busca reservas antiguas
+
+10. Administrar Horarios de Pistas (Administrador)
+    - El Administrador define los horarios de disponibilidad de las pistas
+    - El Administrador bloquea ciertos horarios para mantenimiento o Clases
+    - El Administrador ajusta la disponibilidad de las pistas
+
+11. Gestionar Bonos (Administrador)
+    - El Administrador crea bonos 
+    - El Administrador modifica o elimina bonos existentes
+
+12. Procesar Pagos (Administrador)
+    - El Administrador accede a las reservas pendientes de pago
+    - El Administrador verifica y confirma los pagos
+    - El Administrador actualiza el estado de las reservas después del pago
+
+13. Pagar Reserva
+   - El Usuario accede a sus reservas pendientes de pago
+   - El Usuario selecciona una reserva para la que desea realizar el pago
+   - El Usuario elige el método de pago (tarjeta de crédito, PayPal, etc.)
+   - El Sistema muestra el monto total a pagar
+   - El Usuario ingresa los detalles de pago y confirma la transacción
+   - El Sistema procesa el pago y actualiza el estado de la reserva a "Pagado"
+   - El Usuario recibe una confirmación de pago y los detalles de la reserva
+
+14. Pagar Bonos
+   - El Usuario escoje un plan de bono
+   - El Usuario elige el método de pago (tarjeta de crédito, PayPal, etc.)
+   - El Sistema muestra el monto total a pagar
+   - El Usuario ingresa los detalles de pago y confirma la transacción
+   - Los fondos son añadidos a la cuneta del Usuario
+   - El Usuario recibe una confirmación de pago
+
+Relaciones:
+- El Usuario realiza reservas y cancela reservas.
+- El Administrador gestiona canchas, ve reservas y gestiona usuarios.
+- Las reservas están relacionadas con las canchas.
+- Las canchas son gestionadas por el Administrador.
+- Las reservas están asociadas a un Usuario.
+- El Usuario puede modificar sus reservas y calificar la cancha y la experiencia.
+- El Usuario puede elegir recibir notificaciones y acceder a su historial de reservas.
+- El Administrador gestiona los horarios de las pistas y procesa pagos.
+- Los Bonos  afectan la disponibilidad de las canchas.
+- Los pagos están asociados a las reservas.
+- Los pagos están asociados a reservas específicas.

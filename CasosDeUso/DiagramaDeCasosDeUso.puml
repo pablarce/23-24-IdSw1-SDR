@@ -1,0 +1,64 @@
+@startuml ReservasDePistasDePadel
+
+left to right direction
+actor User as U
+actor Admin as A
+
+
+package Reserva{
+
+    usecase "Realizar Reserva" as UC1
+    usecase "Cancelar Reserva" as UC2
+    usecase "Ver Reservas" as UC5
+    usecase "Ver Historial de Reservas" as UC9
+}
+
+package Pistas {
+
+    usecase "Ver Disponibilidad de Pistas" as UC3
+    usecase "Administrar Horarios de Pistas" as UC10
+    usecase "Administrar Pistas" as UC15
+
+}
+
+package Gestion{
+
+
+    usecase "Gestionar Usuarios" as UC6
+    usecase "Gestionar Bonos" as UC11
+
+
+}
+
+package Pagos{
+
+    usecase "Pagar Reserva" as UC13
+    usecase "Pagar Bonos" as UC14
+    usecase "Procesar Pagos" as UC12
+
+}
+
+package Notificaciones{
+
+   usecase "Recibir Notificaciones de Reservas" as UC8
+ 
+}
+
+
+A --> UC15
+A -up-> UC5
+A -up---> UC6
+A --> UC10
+A -left-> UC11
+A --> UC12
+
+U -up-> UC1
+U -up-> UC2
+U --> UC3
+U -up-> UC8
+U -up-> UC9
+U --> UC13
+U --> UC14
+
+
+@enduml
