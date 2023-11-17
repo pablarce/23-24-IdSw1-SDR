@@ -1,5 +1,8 @@
 # Proyecto Ingeniería de Software
 Repositorio para el proyecto de la asignatura
+
+<img src="LOGO1.svg" width=40% align=right>
+
 ## Joseph Alemany (Cliente)
 # Resumen
 - Se desarrolla el modelo del dominio de una problemática propuesta por un cliente, la cual es, poder manejar las reservas de la cancha de padel de la universidad europea del atlantico que sea de facil uso para gestionar las reservas, hacer seguimiento del mismo, realizar cobros de estas reservas e informar al usuario su tiempo limite de uso en las canchas de padel, ademas que todos los usarios deberan pertenecer al mismo dominio.
