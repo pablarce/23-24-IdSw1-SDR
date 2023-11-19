@@ -1,0 +1,19 @@
+@startuml
+
+:Inicio;
+:Seleccionar tipo de pista;
+  if (Pista disponible?) then (Sí)
+    :Elegir fecha y hora;
+    :Realizar reserva;
+    if (Pago exitoso?) then (Sí)
+      :Confirmación de reserva;
+    else (No)
+      :Mostrar mensaje de error de pago;
+    endif
+  else (No)
+    :Mostrar mensaje de pista no disponible;
+  endif
+:Fin;
+
+@enduml
+
