@@ -1,16 +1,16 @@
 @startuml Pagar
 object Usuario {
-  nombre: String
-  direccion: String
+  nombre: Jon Doe
+  direccion: C. Albert Einstein, 16, 39011 Santander, Cantabria
 }
 
 object TransaccionDePago {
-  monto: Double
-  estado: String
+  monto: 12
+  estado: PAGADO
 }
 
 object Banco {
-  nombre: String
+  nombre: LiberBank
 }
 
 Usuario --> TransaccionDePago : IniciarPago()
