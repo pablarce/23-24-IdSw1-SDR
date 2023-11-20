@@ -3,41 +3,47 @@
 
 repeat
 
-:Actor Administrador solicita pistas;
+:Administrador solicita canchas;
 
-  if (¿Hay pistas disponibles?) then (Sí)
-    :Ofrecer opciones\n(Añadir/Modificar/Eliminar pistas);
+  if (¿Hay canchas disponibles?) then (Sí)
+    :Ofrecer opciones\n(Añadir/Modificar/Eliminar canchas);
 
     if (Selecciona Añadir) then (Añadir)
-      :El Administrador añade una pista;
+      :El Administrador añade una cancha;
 
     else if (Selecciona Modificar) then (Modificar)
-      :El Administrador elige\nuna pista para modificar;
+      
+      repeat
+        :El Administrador elige\nuna cancha para modificar;
+      repeat while (Cancha existe)
 
-      if (Pista existe) then (Sí)
-        :El Administrador modifica la pista;
+      if (Confirmación de modificación) then (Sí)
+        :El Administrador modifica la cancha;
 
       else (No)
-        :Mostrar mensaje\n(La pista no existe);
+        :El Administrador cancela la modificación;
       endif
 
     else if (Selecciona Eliminar) then (Eliminar)
-      :El Administrador elige\nuna pista para eliminar;
 
-      if (Pista existe) then (Sí)
-        :El Administrador elimina la pista;
+      repeat
+        :El Administrador elige\nuna cancha para eliminar;
+      repeat while (Cancha existe)
+
+      if (Confirmación de eliminación) then (Sí)
+        :El Administrador elimina la cancha;
 
       else (No)
-        :Mostrar mensaje\n(La pista no existe);
+        :El Administrador cancela la eliminación;
       endif
     endif
 
   else (No)
-    :Mostrar mensaje\n(No hay pistas disponibles);
-    :El Administrador añade una nueva pista;
+    :Mostrar mensaje\n(No hay canchas disponibles);
+    :El Administrador añade una nueva cancha;
   endif
   
 repeat while (continuar)
 
-:Volver a solicitar pistas;
+:Volver a solicitar canchas;
 @enduml
