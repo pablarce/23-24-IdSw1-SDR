@@ -1,0 +1,10 @@
+@startuml Pagar
+[*] --> Pendiente : Iniciar
+Pendiente --> Aprobado : IngresarDetalles
+Pendiente --> Cancelado : Cancelar
+Aprobado --> Completo : AutorizacionExitosa
+Aprobado --> Rechazado : AutorizacionFallida
+Completo --> [*] : Completar
+Rechazado --> [*] : Rechazar
+Cancelado --> [*] : Cancelar
+@enduml

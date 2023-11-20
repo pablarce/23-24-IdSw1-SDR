@@ -1,0 +1,20 @@
+@startuml Pagar
+object Usuario {
+  nombre: String
+  direccion: String
+}
+
+object TransaccionDePago {
+  monto: Double
+  estado: String
+}
+
+object Banco {
+  nombre: String
+}
+
+Usuario --> TransaccionDePago : IniciarPago()
+TransaccionDePago --> Banco : AutorizarPago()
+Banco --> TransaccionDePago : RespuestaAutorizacion()
+TransaccionDePago --> Usuario : ConfirmarPago()
+@enduml
