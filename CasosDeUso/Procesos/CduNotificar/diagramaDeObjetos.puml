@@ -1,0 +1,32 @@
+@startuml Notificar
+object Usuario {
+  nombreUsuario : torrente@alumnos.uneatlantico.es
+}
+object Reserva {
+  horaInicio : 12:00;
+  horaFin : 13:00;
+  dia : 12/12/2023;
+  pista : 1;
+}
+
+object Notificacion1 {
+  Hora : Reserva.horaInicio.minutos - 10;
+  Objetivo : ConfirmarInicioActividad;
+}
+
+object Notificacion2 {
+  Hora : Reserva.horaFin.minutos - 3;
+  Objetivo : ConfirmarFinActividad;
+}
+
+object Notificacion3 {
+  Hora : Reserva.horaFin;
+  EstadoPista : Libre;
+}
+
+Usuario --> Reserva : PermitirNotificaciones()
+Reserva --> Notificacion1
+Notificacion1 --> Notificacion2 : ConfirmarActividad()
+Notificacion2 --> Notificacion3 : ConfirmarFin()
+Notificacion3 --> Reserva : NuevaReserva()
+@enduml
