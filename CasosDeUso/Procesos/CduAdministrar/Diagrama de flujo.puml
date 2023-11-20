@@ -1,0 +1,43 @@
+@startuml
+:Inicio;
+
+repeat
+
+:Actor Administrador solicita pistas;
+
+  if (¿Hay pistas disponibles?) then (Sí)
+    :Ofrecer opciones\n(Añadir/Modificar/Eliminar pistas);
+
+    if (Selecciona Añadir) then (Añadir)
+      :El Administrador añade una pista;
+
+    else if (Selecciona Modificar) then (Modificar)
+      :El Administrador elige\nuna pista para modificar;
+
+      if (Pista existe) then (Sí)
+        :El Administrador modifica la pista;
+
+      else (No)
+        :Mostrar mensaje\n(La pista no existe);
+      endif
+
+    else if (Selecciona Eliminar) then (Eliminar)
+      :El Administrador elige\nuna pista para eliminar;
+
+      if (Pista existe) then (Sí)
+        :El Administrador elimina la pista;
+
+      else (No)
+        :Mostrar mensaje\n(La pista no existe);
+      endif
+    endif
+
+  else (No)
+    :Mostrar mensaje\n(No hay pistas disponibles);
+    :El Administrador añade una nueva pista;
+  endif
+  
+repeat while (continuar)
+
+:Volver a solicitar pistas;
+@enduml
