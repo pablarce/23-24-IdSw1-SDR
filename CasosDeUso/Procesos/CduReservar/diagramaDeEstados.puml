@@ -1,0 +1,9 @@
+@startuml Reserva
+
+  [*] --> Disponible : Inicializado
+  Disponible -right--> Reservado : Reserva solicitada
+  Reservado ---> Disponible : Reserva cancelada
+  Reservado -right--> Utilizado : Confirmar reserva
+  Utilizado ---> Disponible : Liberar cancha
+
+@enduml
