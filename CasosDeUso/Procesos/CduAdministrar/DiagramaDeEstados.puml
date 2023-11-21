@@ -18,6 +18,8 @@ state HayCanchas {
     OpcionEliminar --> SolicitarCanchas: Cancha Eliminada
     SolicitarCanchas -> HayCanchas : Hay Canchas
     SolicitarCanchas --> NoHayCanchas : No Hay Canchas
+    SolicitarCanchas -> [*] : Salir
 }
+
 
 @enduml
