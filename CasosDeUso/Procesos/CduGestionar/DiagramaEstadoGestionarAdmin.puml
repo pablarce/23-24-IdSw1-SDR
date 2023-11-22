@@ -1,0 +1,29 @@
+@startuml gestionar administrador
+[*] --> Menu : Usuario administrador
+
+state Menu {
+  [*] --> PantallaGestiones : Administrador selecciona gestiones
+  
+}
+
+state PantallaGestiones {
+  [*] --> EsperandoEleccionOpcion : Listan opciones
+  EsperandoEleccionOpcion --> GestionarBonos : selecciona gestionar bonos
+  EsperandoEleccionOpcion --> GestionarUsuarios : selecciona gestionar usuarios
+}
+
+state GestionarBonos {
+  [*] --> EsperandoAccionBonos : Listan bonos
+  EsperandoAccionBonos --> AñadirBono : Selecciona añadir bono
+  EsperandoAccionBonos --> EditarBono : Selecciona editar bono
+}
+
+state GestionarUsuarios {
+  [*] --> EsperandoAccionUsuarios : Listan Usuarios
+  EsperandoAccionUsuarios --> AñadirUsuario : Selecciona añadir usuario
+  EsperandoAccionUsuarios --> EditarUsuario : Selecciona editar usuario
+  EsperandoAccionUsuarios --> BorrarUsuario : Selecciona borrar usuario
+  EsperandoAccionUsuarios --> DesactivarUsuario : Selecciona desactivar usuario
+}
+
+@enduml
