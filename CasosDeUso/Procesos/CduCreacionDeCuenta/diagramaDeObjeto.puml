@@ -1,0 +1,19 @@
+@startuml
+object "Formulario de Creación de Cuenta" as formulario {
+  DNI: string
+  Año de Nacimiento: string
+  Nombre Completo: string
+  Correo: string
+}
+
+object "Base de Datos de Usuarios" as base_de_datos {
+  -- Almacena información de usuarios --
+}
+
+object "Servidor Web" as servidor {
+  -- Procesa las solicitudes --
+}
+
+formulario --> servidor : envía información
+servidor --> base_de_datos : almacena información
+@enduml

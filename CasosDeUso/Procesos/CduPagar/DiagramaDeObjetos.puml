@@ -1,0 +1,20 @@
+@startuml Pagar
+object Usuario {
+  nombre: Jon Doe
+  direccion: C. Albert Einstein, 16, 39011 Santander, Cantabria
+}
+
+object TransaccionDePago {
+  monto: 12
+  estado: PAGADO
+}
+
+object Banco {
+  nombre: LiberBank
+}
+
+Usuario --> TransaccionDePago : IniciarPago()
+TransaccionDePago --> Banco : AutorizarPago()
+Banco --> TransaccionDePago : RespuestaAutorizacion()
+TransaccionDePago --> Usuario : ConfirmarPago()
+@enduml

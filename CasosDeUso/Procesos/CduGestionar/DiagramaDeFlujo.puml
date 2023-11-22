@@ -1,0 +1,66 @@
+@startuml Flujo de gestiones (administrador)
+
+skin rose
+
+title Flujo de gestiones (administrador)
+
+
+start
+
+:Pantalla de gestiones;
+
+repeat
+  fork
+      : Gestionar Bonos;
+      : Listar Bonos;
+      fork
+          : Crear bono;
+          : Introducir info;
+          if (info invalida) then (Si)
+            : Mensaje de Error;
+          else (No)
+            : Bono creado;
+          end if
+        fork again
+          : Editar Bono;
+          : Cambiar info;
+          if (info invalida) then (Si)
+            : Mensaje de Error;
+          else (No)
+            : Bono editado;
+          end if
+      end fork
+    fork again
+      :Gestionar Usuarios;
+      :Listar Usuarios;
+      fork
+          : Agregar Usuario;
+          : Introducir info;
+          if (usuario existente/info invalida) then (Si)
+            : Mensaje de Error;
+          else (No)
+            : Usuario creado;
+          end if
+        fork again
+          : Editar Usuario;
+          : Cambiar info;
+          if (info invalida) then (Si)
+            : Mensaje de Error;
+          else (No)
+            : Usuario editado;
+          end if
+        fork again
+          : Desactivar Usuario;
+        fork again
+          : Eliminar Usuario;
+          if (Estas Seguro?) then (Si)
+            : Eliminar Usuario;
+          else (No)
+          end if
+      end fork
+  end fork
+repeat while (Terminar?)
+
+stop
+
+@enduml

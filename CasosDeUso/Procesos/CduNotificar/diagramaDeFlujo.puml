@@ -1,0 +1,24 @@
+@startuml
+
+:Inicio;
+:Solicitar uso de notificaciones;
+  if (Notificaciones aceptadas) then (Sí)
+    :El sistema notifica 10 minutos antes del inicio de la actividad;
+    if (Confirmacion de usuario: Desarrollo de la actividad) then (Sí)
+      :El sistema notifica 3 minutos antes del fin de la actividad;
+      :Abandono de instalación;
+      :XXComprobar abandono de instalaciónXX;
+      
+    else (No)
+      :No se ha desarrollado la activiad;
+    endif
+    :Pista disponible para uso;
+  
+  else (No)
+    :Mostrar mensaje: ;
+    :El sistema no mostrará notificaciones sobre la reserva, active notificaciones; 
+  endif
+  
+:Fin;
+
+@enduml

@@ -1,0 +1,15 @@
+@startuml
+start
+:Acceder a la página web;
+:Seleccionar opción de creación de cuenta;
+:Llenar formulario con DNI, año de nacimiento, nombre completo, y correo;
+:Enviar formulario;
+if (Validar datos) then (válidos)
+  :Procesar y almacenar datos;
+  :Confirmar creación de cuenta;
+else (inválidos)
+  :Mostrar mensaje de error;
+  :Solicitar corrección de datos;
+endif
+stop
+@enduml

@@ -1,0 +1,14 @@
+@startuml Pagar
+start
+:Iniciar;
+:Ingresar Detalles;
+:Verificar Autorización;
+if (Autorización Exitosa?) then (yes)
+  :Proceso de Pago Completo;
+else (no)
+  :Cancelar;
+  stop
+endif
+:Pago Cancelado;
+stop
+@enduml
