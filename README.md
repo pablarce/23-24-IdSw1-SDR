@@ -33,6 +33,10 @@ Repositorio para el proyecto de la asignatura
 
 
 ## Actores y Casos de Uso
+[Casos de Uso](/CasosDeUso/)
+
+<img src="CasosDeUso/CasoDeUsoSVG.svg" width=50%/>
+
 # Actores
 | Actor                 | Descripción                                    |
 | --------------------- | ---------------------------------------------- |
