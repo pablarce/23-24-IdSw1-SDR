@@ -37,6 +37,10 @@ Repositorio para el proyecto de la asignatura
 
 <img src="CasosDeUso/CasoDeUsoSVG.svg" width=50%/>
 
+## Mock Up
+
+[Mock Up](https://www.figma.com/file/MpId1d2MqM2VkYzj57Lq8v/MockUp?type=design&node-id=0%3A1&mode=design&t=yik5d5ON9Fbw465y-1) de nuestra aplicación en Figma.
+
 # Actores
 | Actor                 | Descripción                                    |
 | --------------------- | ---------------------------------------------- |
