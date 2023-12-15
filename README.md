@@ -41,7 +41,7 @@ Repositorio para el proyecto de la asignatura
 
 [Mock Up](https://www.figma.com/file/MpId1d2MqM2VkYzj57Lq8v/MockUp?type=design&node-id=0%3A1&mode=design&t=yik5d5ON9Fbw465y-1) de nuestra aplicación en Figma.
 
-<img src="MockUp.svg" width=40% align=right>
+<img src="MockUp.svg" width=20% >
 
 # Actores
 | Actor                 | Descripción                                    |
