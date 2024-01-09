@@ -4,10 +4,11 @@ PermitirNotificaciones --> PermisoAceptado : Aceptar
 PermitirNotificaciones --> PermisoDenegado : Rechazar
 PermisoAceptado --> NotificacionInicio : 10 min. antes de hora inicio
 NotificacionInicio --> InicioActividad : Confirmar Actividad
+NotificacionInicio --> NotificacionInicio : Actividad sin confirmar (entre 10 y 0 mins antes de inicio)
 InicioActividad --> DesarrolloActividad
 DesarrolloActividad --> NotificacionFin : 3 min. antes de hora fin
-NotificacionFin --> XXComprobacionPistaLibreXX : Confirmar Fin
-XXComprobacionPistaLibreXX --> PistaLibre
+NotificacionFin --> NotificacionFin : Finalización no confirmada 
+NotificacionFin --> PistaLibre : Confirmar finalización actividad 
 NotificacionInicio --> ActividadNoIniciada : Actividad No Confirmada
 ActividadNoIniciada --> PistaLibre
 PistaLibre --> [*]

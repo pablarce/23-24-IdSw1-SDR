@@ -6,9 +6,11 @@
     :El sistema notifica 10 minutos antes del inicio de la actividad;
     if (Confirmacion de usuario: Desarrollo de la actividad) then (Sí)
       :El sistema notifica 3 minutos antes del fin de la actividad;
-      :Abandono de instalación;
-      :XXComprobar abandono de instalaciónXX;
-      
+      :Confirmacion de usuario: Fialización de la actividad;
+      while (Finalización confirmada) is (No)
+      :Finalización no confirmada;
+      endwhile (Si)
+        :Abandono de instalación;
     else (No)
       :No se ha desarrollado la activiad;
     endif
