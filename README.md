@@ -1,7 +1,7 @@
 # Proyecto Ingeniería de Software
 Repositorio para el proyecto de la asignatura
 
-<img src="LOGO1.svg" width=40% align=right>
+<img src="LOGO_APP.svg" width=40% align=right>
 
 ## Joseph Alemany (Cliente)
 # Resumen
