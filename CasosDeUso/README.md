@@ -4,8 +4,10 @@ En esta carpeta estaran recogidos los casos de uso de la aplicación.
 ![Imagen](CasoDeUsoSVG.svg)
 
 ## Actores
-- Cliente
-- Administrador
+| Actor                 | Descripción                                    |
+| --------------------- | ---------------------------------------------- |
+| **Administrador**     | Gestiona reservas y usuarios         |
+| **Usuarios**          | Realiza reservas               |
 
 ## Caso de uso "[Login](Procesos/CduLogin)"
 
