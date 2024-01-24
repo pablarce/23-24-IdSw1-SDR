@@ -18,7 +18,7 @@ En esta carpeta estaran recogidos los casos de uso de la aplicación.
 ![Imagen](Procesos/CduLogin/DiagramaDeObjetos.svg)
 
 ### Diagrama de flujo
-![Imagen](Procesos/CduLogin/diagramaDeFlujo.svg)
+![Imagen](Procesos/CduLogin/DiagramaDeFlujo.svg)
 
 
 ## Caso de uso "[Creación de cuenta](Procesos/CduCreacionDeCuenta)"
