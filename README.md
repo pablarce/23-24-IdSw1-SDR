@@ -50,12 +50,43 @@ Repositorio para el proyecto de la asignatura
 
 [Casos de Uso](/CasosDeUso/)
 
-<img src="CasosDeUso/CasoDeUsoSVG.svg" width=50%/>
+![Imagen](imagenes/CasoDeUsoSVG.svg)
+
+## Diagrama de Contexto 
+
+## Especificación de los casos de uso 
+
+- Login 
+
+![Imagen](imagenes/DiagramaDeEstadosLogin.svg)
+
+- Crear Cuenta 
+
+![Imagen](imagenes/DiagramaDeEstadosCrear.svg)
+
+- Reservar Pista
+
+![Imagen](imagenes/diagramaDeEstadosReservar.svg)
+
+- Pagar 
+
+![Imagen](imagenes/DiagramaDeEstadosPagar.svg)
+
+- Gestionar
+
+![Imagen](imagenes/DiagramaDeEstadosGestionar.svg)
+
+- Administrar 
+
+![Imagen](imagenes/DiagramaDeEstadosAdministrar.svg)
+
 
 
 ## Prototipo de la interfaz de usuario
 
 ![Imagen](imagenes/Prototipos.png)
+
+## A continuación se presentan los prototipos de interfaz restantes que pertenecen a cada interfaz representada en la imagen anterior:
 
 [Mock Up](https://www.figma.com/file/MpId1d2MqM2VkYzj57Lq8v/MockUp?type=design&node-id=0%3A1&mode=design&t=yik5d5ON9Fbw465y-1) de nuestra aplicación en Figma.
 
