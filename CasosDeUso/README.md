@@ -69,7 +69,7 @@ En esta carpeta estaran recogidos los casos de uso de la aplicación.
 ![Imagen](Procesos/CduAdministrar/DiagramaDeFlujo.svg)
 
 
-## Caso de uso "[Gestionar](Procesos/CduGestionar)"
+## Caso de uso "[Control de usuarios y bonos](Procesos/CduGestionar)"
 
 ### Diagrama de estados
 ![Imagen](Procesos/CduGestionar/DiagramaDeEstados.svg)
