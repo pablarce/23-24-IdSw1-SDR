@@ -1,7 +1,7 @@
 # Proyecto Ingeniería de Software
 Repositorio para el proyecto de la asignatura
 
-<img src="LOGO1.svg" width=40% align=right>
+<img src="LOGO_APP.svg" width=40% align=right>
 
 ## Joseph Alemany (Cliente)
 # Resumen
@@ -25,6 +25,14 @@ Repositorio para el proyecto de la asignatura
 - Accesos
 - Pagos
 
+
+# Modelo de Dominio 
+
+![Imagen](imagenes/ModeloDeDominio.svg)
+
+# Diagrama de Objetos 
+![Imagen](imagenes/DiagramaDeObjetos.svg)
+
 # Diagrama de Estados de una Reserva
 - Diagrama de estados por las que pasa una Reserva
 
@@ -32,20 +40,55 @@ Repositorio para el proyecto de la asignatura
   ![Imagen](imagenes/DiagramadeEstadodeunaReserva.png)
 
 
+
 ## Actores y Casos de Uso
+
+| Actor                 |Descripción                                    |
+| --------------------- | ---------------------------------------------- |
+| **Administrador**     | Gestiona reservas y usuarios         |
+| **Usuarios**          | Realiza reservas               |
+| **Tiempo**            | Termina y notifica reservas               |
+
 [Casos de Uso](/CasosDeUso/)
 
-<img src="CasosDeUso/CasoDeUsoSVG.svg" width=50%/>
+![Imagen](imagenes/CasoDeUsoSVG.svg)
 
-## Mock Up
+
+## Especificación de los casos de uso 
+
+- Login 
+
+![Imagen](imagenes/DiagramaDeEstadosLogin.svg)
+
+- Crear Cuenta 
+
+![Imagen](imagenes/DiagramaDeEstadosCrear.svg)
+
+- Reservar Pista
+
+![Imagen](imagenes/diagramaDeEstadosReservar.svg)
+
+- Pagar 
+
+![Imagen](imagenes/DiagramaDeEstadosPagar.svg)
+
+- Control de usuarios y Bonos
+
+![Imagen](imagenes/DiagramaDeEstadosGestionar.svg)
+
+- Administrar 
+
+![Imagen](imagenes/DiagramaDeEstadosAdministrar.svg)
+
+
+
+## Prototipo de la interfaz de usuario
+
+![Imagen](imagenes/Prototipos.png)
+
+## A continuación se presentan los prototipos de interfaz restantes que pertenecen a cada interfaz representada en la imagen anterior:
 
 [Mock Up](https://www.figma.com/file/MpId1d2MqM2VkYzj57Lq8v/MockUp?type=design&node-id=0%3A1&mode=design&t=yik5d5ON9Fbw465y-1) de nuestra aplicación en Figma.
 
 <img src="MockUp.svg" width=20% >
-
-# Actores
-| Actor                 | Descripción                                    |
-| --------------------- | ---------------------------------------------- |
-| **Administrador**     | Gestiona reservas y usuarios         |
-| **Usuarios**          | Realiza reservas               |
 
