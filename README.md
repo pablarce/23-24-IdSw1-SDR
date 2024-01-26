@@ -52,7 +52,6 @@ Repositorio para el proyecto de la asignatura
 
 ![Imagen](imagenes/CasoDeUsoSVG.svg)
 
-## Diagrama de Contexto 
 
 ## Especificación de los casos de uso 
 
