@@ -25,6 +25,14 @@ Repositorio para el proyecto de la asignatura
 - Accesos
 - Pagos
 
+
+# Modelo de Dominio 
+
+![Imagen](imagenes/ModeloDeDominio.svg)
+
+# Diagrama de Objetos 
+![Imagen](imagenes/DiagramaDeObjetos.svg)
+
 # Diagrama de Estados de una Reserva
 - Diagrama de estados por las que pasa una Reserva
 
@@ -32,20 +40,24 @@ Repositorio para el proyecto de la asignatura
   ![Imagen](imagenes/DiagramadeEstadodeunaReserva.png)
 
 
+
 ## Actores y Casos de Uso
+
+| Actor                 |Descripción                                    |
+| --------------------- | ---------------------------------------------- |
+| **Administrador**     | Gestiona reservas y usuarios         |
+| **Usuarios**          | Realiza reservas               |
+
 [Casos de Uso](/CasosDeUso/)
 
 <img src="CasosDeUso/CasoDeUsoSVG.svg" width=50%/>
 
-## Mock Up
+
+## Prototipo de la interfaz de usuario
+
+![Imagen](imagenes/Prototipos.png)
 
 [Mock Up](https://www.figma.com/file/MpId1d2MqM2VkYzj57Lq8v/MockUp?type=design&node-id=0%3A1&mode=design&t=yik5d5ON9Fbw465y-1) de nuestra aplicación en Figma.
 
 <img src="MockUp.svg" width=20% >
-
-# Actores
-| Actor                 | Descripción                                    |
-| --------------------- | ---------------------------------------------- |
-| **Administrador**     | Gestiona reservas y usuarios         |
-| **Usuarios**          | Realiza reservas               |
 
