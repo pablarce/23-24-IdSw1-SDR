@@ -47,6 +47,7 @@ Repositorio para el proyecto de la asignatura
 | --------------------- | ---------------------------------------------- |
 | **Administrador**     | Gestiona reservas y usuarios         |
 | **Usuarios**          | Realiza reservas               |
+| **Tiempo**            | Termina y notifica reservas               |
 
 [Casos de Uso](/CasosDeUso/)
 
@@ -71,7 +72,7 @@ Repositorio para el proyecto de la asignatura
 
 ![Imagen](imagenes/DiagramaDeEstadosPagar.svg)
 
-- Gestionar
+- Control de usuarios y Bonos
 
 ![Imagen](imagenes/DiagramaDeEstadosGestionar.svg)
 
