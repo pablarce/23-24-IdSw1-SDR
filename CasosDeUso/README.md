@@ -23,7 +23,7 @@ En esta carpeta estaran recogidos los casos de uso de la aplicación.
 
 ## Caso de uso "[Creación de cuenta](Procesos/CduCreacionDeCuenta)"
 
-## Diagrama de estados
+### Diagrama de estados
 ![Imagen](Procesos/CduCreacionDeCuenta/DiagramaDeEstados.svg)
 
 ### Diagrama de objetos
