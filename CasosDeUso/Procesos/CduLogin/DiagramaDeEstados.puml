@@ -2,7 +2,7 @@
 [*] --> NoAutenticado : Inicio
 
 state NoAutenticado {
-  [*] --> EsperandoCredenciales : Usuario ingresa al sistema
+  [*] --> EsperandoCredenciales : Usuario accede al sistema
   EsperandoCredenciales --> VerificandoCredenciales : Credenciales ingresadas
   VerificandoCredenciales --> Autenticado : Credenciales válidas
   VerificandoCredenciales --> NoAutenticado : Credenciales inválidas
