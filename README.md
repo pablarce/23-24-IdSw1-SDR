@@ -16,6 +16,11 @@ Repositorio para el proyecto de la asignatura
 | Ubicación   | Es el lugar físico en donde se encuentran las pistas de padel.                                                                                                                                                                          |
 | Tarifas      | Precio unitario fijado de forma oficial el administrador para los servicios brindados.                                                  |                                                                        |                                                                                                        |
 | Dominio      | Espacio el cual las personas que quieran hacer uso de las pistas deben pertenecer.                                                                                                                                |
+| Cancelar     | Anular una reserva  |
+| Pista         | Espacio que el usuario reserva para jugar   |
+| Bono          | Codigo que se puede canjear para obtener un descuento en las reservas               |
+| Saldo         | Cantidad positiva o negativa que resulta de una cuenta.                            |
+
 
 # Requisitos previos
 - Pistas de padel
