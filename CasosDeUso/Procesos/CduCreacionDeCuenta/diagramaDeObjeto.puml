@@ -1,9 +1,10 @@
 @startuml
 object "Formulario de Creación de Cuenta" as formulario {
   DNI: string
-  Año de Nacimiento: string
+  Código postal: Int
   Nombre Completo: string
   Correo: string
+  Número de teléfono: Int
 }
 
 object "Base de Datos de Usuarios" as base_de_datos {
@@ -11,7 +12,7 @@ object "Base de Datos de Usuarios" as base_de_datos {
 }
 
 object "Servidor Web" as servidor {
-  -- Procesa las solicitudes --
+   Procesa las solicitudes 
 }
 
 formulario --> servidor : envía información
