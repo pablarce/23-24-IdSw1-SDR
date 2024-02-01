@@ -3,14 +3,14 @@
 :Inicio;
 :Solicitar uso de notificaciones;
   if (Notificaciones aceptadas) then (Sí)
-    :El sistema notifica 10 minutos antes del inicio de la actividad;
-    if (Confirmacion de usuario: Desarrollo de la actividad) then (Sí)
-      :El sistema notifica 3 minutos antes del fin de la actividad;
-      :Confirmacion de usuario: Fialización de la actividad;
-      while (Finalización confirmada) is (No)
+    :El sistema notifica al realizar la reserva;
+    if (Acceso confirmado: ¿QR escaneado con éxito?) then (Sí)
+      :El sistema notifica al confirmar el acceso;
+      :Desarrollo de la actividad;
+      while (Abandono de instalaciones confirmado: ¿QR escaneado con éxito?) is (No)
       :Finalización no confirmada;
       endwhile (Si)
-        :Abandono de instalación;
+        :El sistema notifica al confirmar el abandono de instalación;
     else (No)
       :No se ha desarrollado la activiad;
     endif
