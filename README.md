@@ -15,7 +15,15 @@
 - [Diagrama de objetos](DiagramaDeObjetos/DiagramaDeObjetos.svg)
 - [Glosario](ModeloDeDominio/Glosario.md)
 
-## [Casos de Uso](CasosDeUso)
+## Actores y Casos de Uso
+
+| Actor             | Descripción                  |
+| ----------------- | ---------------------------- |
+| **Administrador** | Gestiona reservas y usuarios |
+| **Usuarios**      | Realiza reservas             |
+| **Tiempo**        | Termina y notifica reservas  |
+
+### [Casos de Uso:](CasosDeUso)
 
 - Login
 
@@ -58,4 +66,6 @@
   - [Diagrama de objetos](CasosDeUso/Procesos/CduNotificar/diagramaDeObjetos.svg)
   - [Diagrama de flujo](CasosDeUso/Procesos/CduNotificar/diagramaDeFlujo.svg)
 
-### [- Prototipos de interfaz](https://www.figma.com/file/MpId1d2MqM2VkYzj57Lq8v/MockUp?type=design&node-id=0%3A1&mode=design&t=yik5d5ON9Fbw465y-1)
+### [- Prototipos de interfaz](https://www.figma.com/file/MpId1d2MqM2VkYzj57Lq8v/MockUp?type=design&node-id=0%3A1&mode=design&t=yik5d5ON9Fbw465y-1) (ver en figma)
+
+![Imagen](imagenes/Prototipos.png)
