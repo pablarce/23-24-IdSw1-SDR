@@ -1,0 +1,13 @@
+@startuml
+start
+:Usuario solicita cancelación;
+:Verificar tiempo antes de la reserva;
+if ("Más de 48 horas antes?") then (sí)
+  :Cancelar reserva;
+  :Notificar cancelación al usuario;
+else (no)
+  :Denegar cancelación;
+  :Notificar motivo al usuario;
+endif
+stop
+@enduml
