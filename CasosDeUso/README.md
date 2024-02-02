@@ -1,27 +1,52 @@
 # Casos de uso
 
 ## Actores
-| Actor                 | Descripción                                    |
-| --------------------- | ---------------------------------------------- |
-| **Administrador**     | Gestiona reservas y usuarios         |
-| **Usuarios**          | Realiza reservas               |
+
+| Actor             | Descripción                  |
+| ----------------- | ---------------------------- | --- |
+| **Administrador** | Gestiona reservas y usuarios |
+| **Usuarios**      | Realiza reservas             |
+| **Tiempo**        | Termina y notifica reservas  |     |
 
 ![Imagen](CasoDeUsoSVG.svg)
 
+- Login
 
-* [Login](Procesos/CduLogin)
- 
-* [Creación de cuenta](Procesos/CduCreacionDeCuenta)
- 
-* [Reservar](Procesos/CduReservar)
+  - [Diagrama de estados](Procesos/CduLogin/DiagramaDeEstados.svg)
+  - [Diagrama de objetos](Procesos/CduLogin/DiagramaDeObjetos.svg)
+  - [Diagrama de flujo](Procesos/CduLogin/DiagramaDeFlujo.svg)
 
-* [Pagar](Procesos/CduPagar)
+- Creación de cuenta
 
-* [Administrar](Procesos/CduAdministrar)
+  - [Diagrama de estados](Procesos/CduCreacionDeCuenta/DiagramaDeEstados.svg)
+  - [Diagrama de objetos](Procesos/CduCreacionDeCuenta/DiagramaDeObjetos.svg)
+  - [Diagrama de flujo](Procesos/CduCreacionDeCuenta/DiagramaDeFlujo.svg)
 
-* [Control de usuarios y bonos](Procesos/CduGestionar)
+- Reservar
 
-* [Notificar](Procesos/CduNotificar)
+  - [Diagrama de estados](Procesos/CduReservar/diagramaDeEstados.svg)
+  - [Diagrama de objetos](Procesos/CduReservar/diagramaDeObjetos.svg)
+  - [Diagrama de flujo](Procesos/CduReservar/diagramaDeFlujo.svg)
 
-### [- Prototipos de interfaz](https://www.figma.com/file/MpId1d2MqM2VkYzj57Lq8v/MockUp?type=design&node-id=0%3A1&mode=design&t=yik5d5ON9Fbw465y-1)
+- Pagar
 
+  - [Diagrama de estados](Procesos/CduPagar/DiagramaDeEstados.svg)
+  - [Diagrama de objetos](Procesos/CduPagar/DiagramaDeObjetos.svg)
+  - [Diagrama de flujo](Procesos/CduPagar/DiagramaDeFlujo.svg)
+
+- Administrar
+
+  - [Diagrama de estados](Procesos/CduAdministrar/DiagramaDeEstados.svg)
+  - [Diagrama de objetos](Procesos/CduAdministrar/DiagramaDeObjetos.svg)
+  - [Diagrama de flujo](Procesos/CduAdministrar/DiagramaDeFlujo.svg)
+
+- Control de usuarios y bonos
+
+  - [Diagrama de estados](Procesos/CduGestionar/DiagramaDeEstados.svg)
+  - [Diagrama de objetos](Procesos/CduGestionar/DiagramaDeObjetos.svg)
+  - [Diagrama de flujo](Procesos/CduGestionar/DiagramaDeFlujo.svg)
+
+- Notificar
+  - [Diagrama de estados](Procesos/CduNotificar/diagramaDeEstados.svg)
+  - [Diagrama de objetos](Procesos/CduNotificar/diagramaDeObjetos.svg)
+  - [Diagrama de flujo](Procesos/CduNotificar/diagramaDeFlujo.svg)
