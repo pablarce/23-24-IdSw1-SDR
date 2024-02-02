@@ -1,0 +1,17 @@
+@startuml
+object Usuario {
+  nombre: String
+}
+
+object Reserva {
+  fechaHora: DateTime
+  estado: String
+}
+
+object SistemaDeCancelacion {
+  Tiempo Minimo De Cancelación: Int = 48
+}
+
+Usuario --> Reserva : realiza
+Reserva --> SistemaDeCancelacion : verifica 
+@enduml
