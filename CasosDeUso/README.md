@@ -40,19 +40,25 @@
    - [Diagrama de objetos](Procesos/CduPagar/DiagramaDeObjetos.svg)
    - [Diagrama de flujo](Procesos/CduPagar/DiagramaDeFlujo.svg)
 
-5. **Administrar**
+5. **Cancelar reserva**
+
+   - [Diagrama de estados]()
+   - [Diagrama de objetos]()
+   - [Diagrama de flujo]()
+
+7. **Administrar**
 
    - [Diagrama de estados](Procesos/CduAdministrar/DiagramaDeEstados.svg)
    - [Diagrama de objetos](Procesos/CduAdministrar/DiagramaDeObjetos.svg)
    - [Diagrama de flujo](Procesos/CduAdministrar/DiagramaDeFlujo.svg)
 
-6. **Control de usuarios y bonos**
+8. **Control de usuarios y bonos**
 
    - [Diagrama de estados](Procesos/CduGestionar/DiagramaDeEstados.svg)
    - [Diagrama de objetos](Procesos/CduGestionar/DiagramaDeObjetos.svg)
    - [Diagrama de flujo](Procesos/CduGestionar/DiagramaDeFlujo.svg)
 
-7. **Notificar**
+9. **Notificar**
    - [Diagrama de estados](Procesos/CduNotificar/diagramaDeEstados.svg)
    - [Diagrama de objetos](Procesos/CduNotificar/diagramaDeObjetos.svg)
    - [Diagrama de flujo](Procesos/CduNotificar/diagramaDeFlujo.svg)</div>
