@@ -7,14 +7,20 @@
 | **Tiempo**        | Termina y notifica reservas  |
 
 <div style="display: flex">
-  <img src="CasoDeUsoSVG.svg" alt="Imagen" style="width: 300px;margin-right: 20px;">
+
+## Casos de uso
+
+  <img src="CasoDeUsoSVG.svg" alt="Imagen" style="margin-right: 20px;">
   
-  <div><figcaption><strong>Procesos</strong></figcaption>
-  
-  1. **Login**
-     - [Diagrama de estados](Procesos/CduLogin/DiagramaDeEstados.svg)
-     - [Diagrama de objetos](Procesos/CduLogin/DiagramaDeObjetos.svg)
-     - [Diagrama de flujo](Procesos/CduLogin/DiagramaDeFlujo.svg)
+  <div>
+
+### Procesos
+
+1. **Login**
+
+   - [Diagrama de estados](Procesos/CduLogin/DiagramaDeEstados.svg)
+   - [Diagrama de objetos](Procesos/CduLogin/DiagramaDeObjetos.svg)
+   - [Diagrama de flujo](Procesos/CduLogin/DiagramaDeFlujo.svg)
 
 2. **Creación de cuenta**
 
