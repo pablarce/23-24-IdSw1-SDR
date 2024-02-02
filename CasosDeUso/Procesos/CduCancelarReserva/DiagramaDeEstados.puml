@@ -1,0 +1,16 @@
+@startuml
+state Activa {
+}
+state Cancelada {
+}
+state "No se puede cancelar" as NoPuedeCancelar {
+}
+
+[*] --> Activa
+Activa --> Cancelada : Cancelación exitosa\n(>48 horas antes)
+Activa --> NoPuedeCancelar : Intento de cancelación\n(<48 horas antes)
+NoPuedeCancelar --> Activa : Mantener reserva
+Cancelada --> [*]
+Activa --> [*] : Continua sin cancelación
+NoPuedeCancelar --> [*] : Continua sin cancelación
+@enduml
