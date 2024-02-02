@@ -7,7 +7,7 @@
 | **Tiempo**        | Termina y notifica reservas  |
 
 <div style="display: flex">
-  <img src="CasoDeUsoSVG.svg" alt="Imagen" style="margin-right: 20px;">
+  <img src="CasoDeUsoSVG.svg" alt="Imagen" style="width: 300px;margin-right: 20px;">
   
   <div><figcaption><strong>Procesos</strong></figcaption>
   
@@ -46,6 +46,9 @@
    - [Diagrama de objetos](Procesos/CduGestionar/DiagramaDeObjetos.svg)
    - [Diagrama de flujo](Procesos/CduGestionar/DiagramaDeFlujo.svg)
 
-7. **Notificar** - [Diagrama de estados](Procesos/CduNotificar/diagramaDeEstados.svg) - [Diagrama de objetos](Procesos/CduNotificar/diagramaDeObjetos.svg) - [Diagrama de flujo](Procesos/CduNotificar/diagramaDeFlujo.svg)</div>
+7. **Notificar**
+   - [Diagrama de estados](Procesos/CduNotificar/diagramaDeEstados.svg)
+   - [Diagrama de objetos](Procesos/CduNotificar/diagramaDeObjetos.svg)
+   - [Diagrama de flujo](Procesos/CduNotificar/diagramaDeFlujo.svg)</div>
 
 </div>
