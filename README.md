@@ -1,99 +1,71 @@
 # Proyecto Ingeniería de Software
-Repositorio para el proyecto de la asignatura
 
 <img src="LOGO_APP.svg" width=40% align=right>
 
-## Joseph Alemany (Cliente)
-# Resumen
+### Joseph Alemany (Cliente)
+
+## Resumen
+
 - Se desarrolla el modelo del dominio de una problemática propuesta por un cliente, la cual es, poder manejar las reservas de la cancha de padel de la universidad europea del atlantico que sea de facil uso para gestionar las reservas, hacer seguimiento del mismo, realizar cobros de estas reservas e informar al usuario su tiempo limite de uso en las canchas de padel, ademas que todos los usarios deberan pertenecer al mismo dominio.
-# Introducción
-- Gestionar las reservas de la cancha de padel de la universidad 
-# Glosario
-| Entidad     | Definición                                                                                                                                                                                                                |
-| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Usuario     | Todo aquel que interactúe con la aplicación, ya sea como administrador para gestionarla o como un usuario tecnico que desee ver información de las redes.                                                                 |
-| Registro         |Espacio  virtual donde se deja constancia de un hecho, o el acto de hacer lo mismo |
-| Ubicación   | Es el lugar físico en donde se encuentran las pistas de padel.                                                                                                                                                                          |
-| Tarifas      | Precio unitario fijado de forma oficial el administrador para los servicios brindados.                                                  |                                                                        |                                                                                                        |
-| Dominio      | Espacio el cual las personas que quieran hacer uso de las pistas deben pertenecer.                                                                                                                                |
-| Cancelar     | Anular una reserva  |
-| Pista         | Espacio que el usuario reserva para jugar   |
-| Bono          | Codigo que se puede canjear para obtener un descuento en las reservas               |
-| Saldo         | Cantidad positiva o negativa que resulta de una cuenta.                            |
 
+## Modelo de Dominio
 
-# Requisitos previos
-- Pistas de padel
-- Usuario/Administrador
-- Calendario/Horario
-- Tarifas
-- Accesos
-- Pagos
-
-
-# Modelo de Dominio 
-
-![Imagen](imagenes/ModeloDeDominio.svg)
-
-# Diagrama de Objetos 
-![Imagen](imagenes/DiagramaDeObjetos.svg)
-
-# Diagrama de Estados de una Reserva
-- Diagrama de estados por las que pasa una Reserva
-
-            
-  ![Imagen](imagenes/DiagramadeEstadodeunaReserva.png)
-
-
+- [Diagrama de clases](DiagramaDeClases/DiagramaDeClases.svg)
+- [Diagrama de estado](DiagramaDeEstado/ModeloDeEstado.svg)
+- [Diagrama de objetos](DiagramaDeObjetos/DiagramaDeObjetos.svg)
+- [Glosario](ModeloDeDominio/Glosario.md)
 
 ## Actores y Casos de Uso
 
-| Actor                 |Descripción                                    |
-| --------------------- | ---------------------------------------------- |
-| **Administrador**     | Gestiona reservas y usuarios         |
-| **Usuarios**          | Realiza reservas               |
-| **Tiempo**            | Termina y notifica reservas               |
+| Actor             | Descripción                  |
+| ----------------- | ---------------------------- |
+| **Administrador** | Gestiona reservas y usuarios |
+| **Usuarios**      | Realiza reservas             |
+| **Tiempo**        | Termina y notifica reservas  |
 
-[Casos de Uso](/CasosDeUso/)
+### [Casos de Uso:](CasosDeUso)
 
-![Imagen](imagenes/CasoDeUsoSVG.svg)
+- Login
 
+  - [Diagrama de estados](CasosDeUso/Procesos/CduLogin/DiagramaDeEstados.svg)
+  - [Diagrama de objetos](CasosDeUso/Procesos/CduLogin/DiagramaDeObjetos.svg)
+  - [Diagrama de flujo](CasosDeUso/Procesos/CduLogin/DiagramaDeFlujo.svg)
 
-## Especificación de los casos de uso 
+- Creación de cuenta
 
-- Login 
+  - [Diagrama de estados](CasosDeUso/Procesos/CduCreacionDeCuenta/DiagramaDeEstados.svg)
+  - [Diagrama de objetos](CasosDeUso/Procesos/CduCreacionDeCuenta/DiagramaDeObjetos.svg)
+  - [Diagrama de flujo](CasosDeUso/Procesos/CduCreacionDeCuenta/DiagramaDeFlujo.svg)
 
-![Imagen](imagenes/DiagramaDeEstadosLogin.svg)
+- Reservar
 
-- Crear Cuenta 
+  - [Diagrama de estados](CasosDeUso/Procesos/CduReservar/diagramaDeEstados.svg)
+  - [Diagrama de objetos](CasosDeUso/Procesos/CduReservar/diagramaDeObjetos.svg)
+  - [Diagrama de flujo](CasosDeUso/Procesos/CduReservar/diagramaDeFlujo.svg)
 
-![Imagen](imagenes/DiagramaDeEstadosCrear.svg)
+- Pagar
 
-- Reservar Pista
+  - [Diagrama de estados](CasosDeUso/Procesos/CduPagar/DiagramaDeEstados.svg)
+  - [Diagrama de objetos](CasosDeUso/Procesos/CduPagar/DiagramaDeObjetos.svg)
+  - [Diagrama de flujo](CasosDeUso/Procesos/CduPagar/DiagramaDeFlujo.svg)
 
-![Imagen](imagenes/diagramaDeEstadosReservar.svg)
+- Administrar
 
-- Pagar 
+  - [Diagrama de estados](CasosDeUso/Procesos/CduAdministrar/DiagramaDeEstados.svg)
+  - [Diagrama de objetos](CasosDeUso/Procesos/CduAdministrar/DiagramaDeObjetos.svg)
+  - [Diagrama de flujo](CasosDeUso/Procesos/CduAdministrar/DiagramaDeFlujo.svg)
 
-![Imagen](imagenes/DiagramaDeEstadosPagar.svg)
+- Control de usuarios y bonos
 
-- Control de usuarios y Bonos
+  - [Diagrama de estados](CasosDeUso/Procesos/CduGestionar/DiagramaDeEstados.svg)
+  - [Diagrama de objetos](CasosDeUso/Procesos/CduGestionar/DiagramaDeObjetos.svg)
+  - [Diagrama de flujo](CasosDeUso/Procesos/CduGestionar/DiagramaDeFlujo.svg)
 
-![Imagen](imagenes/DiagramaDeEstadosGestionar.svg)
+- Notificar
+  - [Diagrama de estados](CasosDeUso/Procesos/CduNotificar/diagramaDeEstados.svg)
+  - [Diagrama de objetos](CasosDeUso/Procesos/CduNotificar/diagramaDeObjetos.svg)
+  - [Diagrama de flujo](CasosDeUso/Procesos/CduNotificar/diagramaDeFlujo.svg)
 
-- Administrar 
-
-![Imagen](imagenes/DiagramaDeEstadosAdministrar.svg)
-
-
-
-## Prototipo de la interfaz de usuario
+### [- Prototipos de interfaz](https://www.figma.com/file/MpId1d2MqM2VkYzj57Lq8v/MockUp?type=design&node-id=0%3A1&mode=design&t=yik5d5ON9Fbw465y-1) (ver en figma)
 
 ![Imagen](imagenes/Prototipos.png)
-
-## A continuación se presentan los prototipos de interfaz restantes que pertenecen a cada interfaz representada en la imagen anterior:
-
-[Mock Up](https://www.figma.com/file/MpId1d2MqM2VkYzj57Lq8v/MockUp?type=design&node-id=0%3A1&mode=design&t=yik5d5ON9Fbw465y-1) de nuestra aplicación en Figma.
-
-<img src="MockUp.svg" width=20% >
-

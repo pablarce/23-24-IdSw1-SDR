@@ -1,1 +1,267 @@
-<?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="631px" preserveAspectRatio="none" style="width:1028px;height:631px;background:#FFFFFF;" version="1.1" viewBox="0 0 1028 631" width="1028px" zoomAndPan="magnify"><defs/><g><!--cluster Reserva--><g id="cluster_Reserva"><path d="M333,177 L398,177 A3.75,3.75 0 0 1 400.5,179.5 L407.5,199.2969 L573,199.2969 A2.5,2.5 0 0 1 575.5,201.7969 L575.5,486.5 A2.5,2.5 0 0 1 573,489 L333,489 A2.5,2.5 0 0 1 330.5,486.5 L330.5,179.5 A2.5,2.5 0 0 1 333,177 " fill="none" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="330.5" x2="407.5" y1="199.2969" y2="199.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="64" x="334.5" y="191.9951">Reserva</text></g><!--cluster Pistas--><g id="cluster_Pistas"><path d="M744.5,6 L796.5,6 A3.75,3.75 0 0 1 799,8.5 L806,28.2969 L1018.5,28.2969 A2.5,2.5 0 0 1 1021,30.7969 L1021,270.5 A2.5,2.5 0 0 1 1018.5,273 L744.5,273 A2.5,2.5 0 0 1 742,270.5 L742,8.5 A2.5,2.5 0 0 1 744.5,6 " fill="none" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="742" x2="806" y1="28.2969" y2="28.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="51" x="746" y="20.9951">Pistas</text></g><!--cluster Gestion--><g id="cluster_Gestion"><path d="M8.5,17 L72.5,17 A3.75,3.75 0 0 1 75,19.5 L82,39.2969 L206.5,39.2969 A2.5,2.5 0 0 1 209,41.7969 L209,177.5 A2.5,2.5 0 0 1 206.5,180 L8.5,180 A2.5,2.5 0 0 1 6,177.5 L6,19.5 A2.5,2.5 0 0 1 8.5,17 " fill="none" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="6" x2="82" y1="39.2969" y2="39.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="63" x="10" y="31.9951">Gestion</text></g><!--cluster Pagos--><g id="cluster_Pagos"><path d="M792,297 L842,297 A3.75,3.75 0 0 1 844.5,299.5 L851.5,319.2969 L971,319.2969 A2.5,2.5 0 0 1 973.5,321.7969 L973.5,517.5 A2.5,2.5 0 0 1 971,520 L792,520 A2.5,2.5 0 0 1 789.5,517.5 L789.5,299.5 A2.5,2.5 0 0 1 792,297 " fill="none" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="789.5" x2="851.5" y1="319.2969" y2="319.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="49" x="793.5" y="311.9951">Pagos</text></g><!--cluster Notificaciones--><g id="cluster_Notificaciones"><path d="M300.5,513 L418.5,513 A3.75,3.75 0 0 1 421,515.5 L428,535.2969 L605.5,535.2969 A2.5,2.5 0 0 1 608,537.7969 L608,621.5 A2.5,2.5 0 0 1 605.5,624 L300.5,624 A2.5,2.5 0 0 1 298,621.5 L298,515.5 A2.5,2.5 0 0 1 300.5,513 " fill="none" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="298" x2="428" y1="535.2969" y2="535.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="117" x="302" y="527.9951">Notificaciones</text></g><g id="elem_UC1"><ellipse cx="452.7839" cy="298.8568" fill="#F1F1F1" rx="79.7839" ry="18.3568" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="118" x="392.0356" y="302.2613">Realizar Reserva</text></g><g id="elem_UC2"><ellipse cx="452.8658" cy="453.7732" fill="#F1F1F1" rx="81.8658" ry="18.7732" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="123" x="390.3805" y="456.9463">Cancelar Reserva</text></g><g id="elem_UC5"><ellipse cx="453.0634" cy="228.9127" fill="#F1F1F1" rx="70.0634" ry="16.4127" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="93" x="403.5634" y="232.6602">Ver Reservas</text></g><g id="elem_UC9"><ellipse cx="452.8679" cy="376.1736" fill="#F1F1F1" rx="106.3679" ry="23.6736" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="178" x="363.8679" y="379.0203">Ver Historial de Reservas</text></g><g id="elem_UC3"><ellipse cx="881.5937" cy="231.1187" fill="#F1F1F1" rx="116.0937" ry="25.6187" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="199" x="782.0937" y="233.9654">Ver Disponibilidad de Pistas</text></g><g id="elem_UC10"><ellipse cx="881.5909" cy="143.1182" fill="#F1F1F1" rx="123.5909" ry="27.1182" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="215" x="774.0909" y="145.9649">Administrar Horarios de Pistas</text></g><g id="elem_UC15"><ellipse cx="881.3592" cy="60.8718" fill="#F1F1F1" rx="84.8592" ry="19.3718" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="130" x="816.3592" y="63.7185">Administrar Pistas</text></g><g id="elem_UC6"><ellipse cx="107.728" cy="144.0456" fill="#F1F1F1" rx="85.728" ry="19.5456" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="132" x="41.728" y="146.8923">Gestionar Usuarios</text></g><g id="elem_UC11"><ellipse cx="107.2839" cy="70.8568" fill="#F1F1F1" rx="79.7839" ry="18.3568" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="118" x="46.5356" y="74.2613">Gestionar Bonos</text></g><g id="elem_UC13"><ellipse cx="881.5678" cy="420.0136" fill="#F1F1F1" rx="73.0678" ry="17.0136" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="101" x="828.0678" y="423.7611">Pagar Reserva</text></g><g id="elem_UC14"><ellipse cx="881.74" cy="488.048" fill="#F1F1F1" rx="68.24" ry="16.048" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="88" x="834.74" y="491.7956">Pagar Bonos</text></g><g id="elem_UC12"><ellipse cx="881.2754" cy="350.0551" fill="#F1F1F1" rx="75.7754" ry="17.5551" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="108" x="824.2754" y="353.8026">Procesar Pagos</text></g><g id="elem_UC8"><ellipse cx="452.7578" cy="578.1516" fill="#F1F1F1" rx="138.7578" ry="30.1516" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="247" x="329.2578" y="580.9982">Recibir Notificaciones de Reservas</text></g><!--entity U--><g id="elem_U"><ellipse cx="675" cy="390.5" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><path d="M675,398.5 L675,425.5 M662,406.5 L688,406.5 M675,425.5 L662,440.5 M675,425.5 L688,440.5 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="31" x="659.5" y="454.9951">User</text></g><!--entity A--><g id="elem_A"><ellipse cx="675" cy="113.5" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><path d="M675,121.5 L675,148.5 M662,129.5 L688,129.5 M675,148.5 L662,163.5 M675,148.5 L688,163.5 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="46" x="652" y="177.9951">Admin</text></g><!--link A to UC15--><g id="link_A_UC15"><path d="M698.23,122.241 C708.464,113.65 721.169,104.255 734,98 C758.169,86.217 780.6169,79.2575 805.8659,73.5655 " fill="none" id="A-to-UC15" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="811.719,72.246,802.0597,70.3232,806.8414,73.3456,803.819,78.1273,811.719,72.246" style="stroke:#181818;stroke-width:1.0;"/></g><!--reverse link UC5 to A--><g id="link_UC5_A"><path d="M498.558,213.406 C531.55,201.689 574.357,186.023 616,169 C627.951,164.115 641.093,158.264 651.841,153.351 " fill="none" id="UC5-backto-A" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="492.904,215.414,502.7237,216.1713,497.6157,213.7407,500.0464,208.6326,492.904,215.414" style="stroke:#181818;stroke-width:1.0;"/></g><!--reverse link UC6 to A--><g id="link_UC6_A"><path d="M199.161,143.8394 C332.113,143.6044 576.492,143.172 651.938,143.039 " fill="none" id="UC6-backto-A" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="193.161,143.85,202.1681,147.8341,198.161,143.8412,202.1539,139.8341,193.161,143.85" style="stroke:#181818;stroke-width:1.0;"/></g><!--link A to UC10--><g id="link_A_UC10"><path d="M698.274,143 C713.492,143 728.992,143 751.913,143 " fill="none" id="A-to-UC10" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="757.913,143,748.913,139,752.913,143,748.913,147,757.913,143" style="stroke:#181818;stroke-width:1.0;"/></g><!--reverse link UC11 to A--><g id="link_UC11_A"><path d="M193.6095,70.7765 C294.5685,72.1145 467.882,80.233 616,118 C628.325,121.143 641.389,126.57 651.992,131.567 " fill="none" id="UC11-backto-A" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="187.61,70.697,196.5562,74.8159,192.6096,70.7633,196.6622,66.8166,187.61,70.697" style="stroke:#181818;stroke-width:1.0;"/></g><!--link A to UC12--><g id="link_A_UC12"><path d="M685.704,181.263 C694.455,209.415 709.742,247.13 734,273 C762.106,302.972 798.9224,321.3362 830.8934,333.6062 " fill="none" id="A-to-UC12" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="836.495,335.756,829.5258,328.7968,831.827,333.9645,826.6593,336.2657,836.495,335.756" style="stroke:#181818;stroke-width:1.0;"/></g><!--reverse link UC1 to U--><g id="link_UC1_U"><path d="M535.962,305.0126 C564.815,309.8326 590.834,317.954 616,335 C635.081,347.924 649.659,369.406 659.428,387.54 " fill="none" id="UC1-backto-U" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="530.044,304.024,538.2619,309.4523,534.9757,304.8479,539.5801,301.5616,530.044,304.024" style="stroke:#181818;stroke-width:1.0;"/></g><!--reverse link UC2 to U--><g id="link_UC2_U"><path d="M527.7316,442.6047 C576.2126,435.1127 631.654,426.544 659.309,422.27 " fill="none" id="UC2-backto-U" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="521.802,443.521,531.3073,446.0996,526.7433,442.7574,530.0855,438.1934,521.802,443.521" style="stroke:#181818;stroke-width:1.0;"/></g><!--link U to UC3--><g id="link_U_UC3"><path d="M690.627,383.147 C700.496,361.684 715.158,335.165 734,316 C760.284,289.265 791.3277,270.6948 821.2897,256.1598 " fill="none" id="U-to-UC3" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="826.688,253.541,816.8446,253.8703,822.1894,255.7233,820.3364,261.0681,826.688,253.541" style="stroke:#181818;stroke-width:1.0;"/></g><!--reverse link UC8 to U--><g id="link_UC8_U"><path d="M520.8108,548.3331 C552.5958,532.7416 585.609,513.934 616,489 C632.938,475.104 648.696,455.77 659.499,441.103 " fill="none" id="UC8-backto-U" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="515.424,550.9755,525.2658,550.6031,519.913,548.7735,521.7426,543.4207,515.424,550.9755" style="stroke:#181818;stroke-width:1.0;"/></g><!--reverse link UC9 to U--><g id="link_UC9_U"><path d="M538.3765,392.8756 C584.7755,402.1546 633.458,411.892 659.173,417.035 " fill="none" id="UC9-backto-U" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="532.493,391.699,540.5339,397.3862,537.3959,392.6795,542.1027,389.5416,532.493,391.699" style="stroke:#181818;stroke-width:1.0;"/></g><!--link U to UC13--><g id="link_U_UC13"><path d="M690.707,420 C715.068,420 759.344,420 802.032,420 " fill="none" id="U-to-UC13" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="808.032,420,799.032,416,803.032,420,799.032,424,808.032,420" style="stroke:#181818;stroke-width:1.0;"/></g><!--link U to UC14--><g id="link_U_UC14"><path d="M690.568,430.608 C701.899,438.398 718.287,448.683 734,455 C762.544,466.475 790.0029,473.2766 817.6699,478.4676 " fill="none" id="U-to-UC14" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="823.567,479.574,815.459,473.9829,818.6527,478.652,813.9837,481.8457,823.567,479.574" style="stroke:#181818;stroke-width:1.0;"/></g><!--SRC=[TPF1Ri8m38RlUOg8EnAXWE0oYJ5fd2Q4nEvUQegrhAcIiiEclVkSjhHD2prKVvpFzf-uDNWkPMcbe-nIofGSwf9iBa2NricJHoV1orEptgPVb8V0LWXHWFw43EKHcVg6No4aFrUF6ZpAoH71q0-us_waAhHJCRM3NACPKVEOUiSMy0sn71DxycoImCWKX_X6_7ME3mnoTEWur7WXNzYSFiXG2caeLCDDcIJEgEw3znqVO6_vJTQFSjJiSL8CBaNVvIlwC0fs6UStSGZZkLOjc_pL8-xPvYsab8Yw722pVdWJ71mFBhd7HAKN0y9PZJwSClIuGVEe_PijwKmQD3l5naVl4z8y2JU0xantBMGeAhPoEdsgRvBbjQWMDrrlhJfe5gJX7w1Ugcw7FPxQVDNJyw0hbVIYwvxUj8HAEhdu1m00]--></g></svg>
+<?xml version="1.0" encoding="us-ascii" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="1118px" preserveAspectRatio="none"
+    style="width:1175px;height:1118px;background:#FFFFFF;" version="1.1" viewBox="0 0 1175 1118" width="1175px"
+    zoomAndPan="magnify">
+    <defs />
+    <g>
+        <!--cluster Reserva-->
+        <g id="cluster_Reserva">
+            <path
+                d="M473.7509,361 L538.7509,361 A3.75,3.75 0 0 1 541.2509,363.5 L548.2509,383.2969 L729.7509,383.2969 A2.5,2.5 0 0 1 732.2509,385.7969 L732.2509,778.5 A2.5,2.5 0 0 1 729.7509,781 L473.7509,781 A2.5,2.5 0 0 1 471.2509,778.5 L471.2509,363.5 A2.5,2.5 0 0 1 473.7509,361 "
+                fill="none" style="stroke:#000000;stroke-width:1.5;" />
+            <line style="stroke:#000000;stroke-width:1.5;" x1="471.2509" x2="548.2509" y1="383.2969" y2="383.2969" />
+            <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
+                textLength="64" x="475.2509" y="375.9951">Reserva</text>
+        </g>
+        <!--cluster Pistas-->
+        <g id="cluster_Pistas">
+            <path
+                d="M138.7509,6 L190.7509,6 A3.75,3.75 0 0 1 193.2509,8.5 L200.2509,28.2969 L428.7509,28.2969 A2.5,2.5 0 0 1 431.2509,30.7969 L431.2509,305.5 A2.5,2.5 0 0 1 428.7509,308 L138.7509,308 A2.5,2.5 0 0 1 136.2509,305.5 L136.2509,8.5 A2.5,2.5 0 0 1 138.7509,6 "
+                fill="none" style="stroke:#000000;stroke-width:1.5;" />
+            <line style="stroke:#000000;stroke-width:1.5;" x1="136.2509" x2="200.2509" y1="28.2969" y2="28.2969" /><text
+                fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
+                textLength="51" x="140.2509" y="20.9951">Pistas</text>
+        </g>
+        <!--cluster Pagos-->
+        <g id="cluster_Pagos">
+            <path
+                d="M917.2509,200 L967.2509,200 A3.75,3.75 0 0 1 969.7509,202.5 L976.7509,222.2969 L1109.2479,222.2969 A2.5,2.5 0 0 1 1111.7479,224.7969 L1111.7479,422.5 A2.5,2.5 0 0 1 1109.2479,425 L917.2509,425 A2.5,2.5 0 0 1 914.7509,422.5 L914.7509,202.5 A2.5,2.5 0 0 1 917.2509,200 "
+                fill="none" style="stroke:#000000;stroke-width:1.5;" />
+            <line style="stroke:#000000;stroke-width:1.5;" x1="914.7509" x2="976.7509" y1="222.2969" y2="222.2969" />
+            <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
+                textLength="49" x="918.7509" y="214.9951">Pagos</text>
+        </g>
+        <!--cluster Notificaciones-->
+        <g id="cluster_Notificaciones">
+            <path
+                d="M860.7509,635 L978.7509,635 A3.75,3.75 0 0 1 981.2509,637.5 L988.2509,657.2969 L1165.7479,657.2969 A2.5,2.5 0 0 1 1168.2479,659.7969 L1168.2479,1101.5 A2.5,2.5 0 0 1 1165.7479,1104 L860.7509,1104 A2.5,2.5 0 0 1 858.2509,1101.5 L858.2509,637.5 A2.5,2.5 0 0 1 860.7509,635 "
+                fill="none" style="stroke:#000000;stroke-width:1.5;" />
+            <line style="stroke:#000000;stroke-width:1.5;" x1="858.2509" x2="988.2509" y1="657.2969" y2="657.2969" />
+            <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
+                textLength="117" x="862.2509" y="649.9951">Notificaciones</text>
+        </g>
+        <g id="elem_UC1">
+            <ellipse cx="601.5348" cy="422.8568" fill="#F1F1F1" rx="79.7839" ry="18.3568"
+                style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="14"
+                lengthAdjust="spacing" textLength="118" x="540.7865" y="426.2613">Realizar Reserva</text>
+        </g>
+        <g id="elem_UC2">
+            <ellipse cx="601.6167" cy="495.7732" fill="#F1F1F1" rx="81.8658" ry="18.7732"
+                style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="14"
+                lengthAdjust="spacing" textLength="123" x="539.1314" y="498.9463">Cancelar Reserva</text>
+        </g>
+        <g id="elem_UC9">
+            <ellipse cx="601.6188" cy="574.1736" fill="#F1F1F1" rx="106.3679" ry="23.6736"
+                style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="14"
+                lengthAdjust="spacing" textLength="178" x="512.6188" y="577.0203">Ver Historial de Reservas</text>
+        </g>
+        <g id="elem_UC5">
+            <ellipse cx="601.8143" cy="648.9127" fill="#F1F1F1" rx="70.0634" ry="16.4127"
+                style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="14"
+                lengthAdjust="spacing" textLength="93" x="552.3143" y="652.6602">Ver Reservas</text>
+        </g>
+        <g id="elem_UC11">
+            <ellipse cx="601.5348" cy="718.8568" fill="#F1F1F1" rx="79.7839" ry="18.3568"
+                style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="14"
+                lengthAdjust="spacing" textLength="118" x="540.7865" y="722.2613">Gestionar Bonos</text>
+        </g>
+        <g id="elem_UC10">
+            <ellipse cx="283.8418" cy="163.1182" fill="#F1F1F1" rx="123.5909" ry="27.1182"
+                style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="14"
+                lengthAdjust="spacing" textLength="215" x="176.3418" y="165.9649">Administrar Horarios de Pistas</text>
+        </g>
+        <g id="elem_UC15">
+            <ellipse cx="283.6101" cy="244.8718" fill="#F1F1F1" rx="84.8592" ry="19.3718"
+                style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="14"
+                lengthAdjust="spacing" textLength="130" x="218.6101" y="247.7185">Administrar Pistas</text>
+        </g>
+        <g id="elem_UC3">
+            <ellipse cx="283.8446" cy="75.1187" fill="#F1F1F1" rx="116.0937" ry="25.6187"
+                style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="14"
+                lengthAdjust="spacing" textLength="199" x="184.3446" y="77.9654">Ver Disponibilidad de Pistas</text>
+        </g>
+        <g id="elem_UC13">
+            <ellipse cx="1013.3187" cy="319.0136" fill="#F1F1F1" rx="73.0678" ry="17.0136"
+                style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="14"
+                lengthAdjust="spacing" textLength="101" x="959.8187" y="322.7611">Pagar Reserva</text>
+        </g>
+        <g id="elem_UC14">
+            <ellipse cx="1013.4909" cy="251.048" fill="#F1F1F1" rx="68.24" ry="16.048"
+                style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="14"
+                lengthAdjust="spacing" textLength="88" x="966.4909" y="254.7956">Pagar Bonos</text>
+        </g>
+        <g id="elem_UC12">
+            <ellipse cx="1013.0389" cy="389.8576" fill="#F1F1F1" rx="82.288" ry="18.8576"
+                style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="14"
+                lengthAdjust="spacing" textLength="124" x="950.2014" y="392.9838">Administar Pagos</text>
+        </g>
+        <g id="elem_UC8">
+            <ellipse cx="1013.0087" cy="783.1516" fill="#F1F1F1" rx="138.7578" ry="30.1516"
+                style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="14"
+                lengthAdjust="spacing" textLength="247" x="889.5087" y="785.9982">Recibir Notificaciones de
+                Reservas</text>
+        </g>
+        <g id="elem_UC4">
+            <ellipse cx="1013.0053" cy="967.7509" fill="#F1F1F1" rx="129.2544" ry="28.2509"
+                style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="14"
+                lengthAdjust="spacing" textLength="227" x="899.5053" y="970.5976">Recibir Notificaciones de Bonos</text>
+        </g>
+        <g id="elem_UC16">
+            <ellipse cx="1013.0592" cy="1060.0617" fill="#F1F1F1" rx="128.3083" ry="28.0617"
+                style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="14"
+                lengthAdjust="spacing" textLength="225" x="900.5592" y="1062.9083">Recibir Notificaciones de
+                Pagos</text>
+        </g>
+        <g id="elem_UC17">
+            <ellipse cx="1013.0592" cy="876.0617" fill="#F1F1F1" rx="128.3083" ry="28.0617"
+                style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="14"
+                lengthAdjust="spacing" textLength="225" x="900.5592" y="878.9083">Recibir Notificaciones de
+                Pistas</text>
+        </g>
+        <g id="elem_UC7">
+            <ellipse cx="1013.2005" cy="693.9899" fill="#F1F1F1" rx="105.4496" ry="23.4899"
+                style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="14"
+                lengthAdjust="spacing" textLength="176" x="925.2005" y="696.8366">Gestionar Notificaciones</text>
+        </g>
+        <!--entity U-->
+        <g id="elem_U">
+            <ellipse cx="283.7509" cy="505.5" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;" />
+            <path
+                d="M283.7509,513.5 L283.7509,540.5 M270.7509,521.5 L296.7509,521.5 M283.7509,540.5 L270.7509,555.5 M283.7509,540.5 L296.7509,555.5 "
+                fill="none" style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif"
+                font-size="14" lengthAdjust="spacing" textLength="31" x="268.2509" y="569.9951">User</text>
+        </g>
+        <!--entity A-->
+        <g id="elem_A">
+            <ellipse cx="791.2509" cy="522.5" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;" />
+            <path
+                d="M791.2509,530.5 L791.2509,557.5 M778.2509,538.5 L804.2509,538.5 M791.2509,557.5 L778.2509,572.5 M791.2509,557.5 L804.2509,572.5 "
+                fill="none" style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif"
+                font-size="14" lengthAdjust="spacing" textLength="46" x="768.2509" y="586.9951">Admin</text>
+        </g>
+        <!--reverse link Reserva to A-->
+        <g id="link_Reserva_A">
+            <path
+                d="M737.804,762.3872 C739.5193,761.3938 737.2514,762.5279 738.8939,761.4163 C742.1788,759.1933 745.3092,756.7286 748.2509,754 C771.6899,732.26 782.8619,642.629 787.4779,590.352 "
+                fill="none" id="Reserva-backto-A" style="stroke:#181818;stroke-width:1.0;" />
+            <polygon fill="#181818"
+                points="732.5622,765.3067,742.3712,764.422,736.9304,762.8738,738.4786,757.433,732.5622,765.3067"
+                style="stroke:#181818;stroke-width:1.0;" />
+        </g>
+        <!--reverse link Pistas to A-->
+        <g id="link_Pistas_A">
+            <path
+                d="M438.7322,289.5534 C441.6183,289.5917 440.6883,289.6058 443.6191,289.6743 C449.4806,289.8113 455.4278,290.0107 461.4468,290.28 C557.7499,294.5888 672.4139,316.8025 748.2509,388 C766.3569,404.999 778.8619,471.026 785.2689,513.941 "
+                fill="none" id="Pistas-backto-A" style="stroke:#181818;stroke-width:1.0;" />
+            <polygon fill="#181818"
+                points="432.7325,289.4887,441.6888,293.5855,437.7322,289.5426,441.7751,285.586,432.7325,289.4887"
+                style="stroke:#181818;stroke-width:1.0;" />
+        </g>
+        <!--link A to UC12-->
+        <g id="link_A_UC12">
+            <path d="M814.5559,535.575 C855.9579,505.088 939.5605,443.5268 982.7105,411.7518 " fill="none"
+                id="A-to-UC12" style="stroke:#181818;stroke-width:1.0;" />
+            <polygon fill="#181818"
+                points="987.5419,408.194,977.923,410.3097,983.5157,411.1588,982.6667,416.7516,987.5419,408.194"
+                style="stroke:#181818;stroke-width:1.0;" />
+        </g>
+        <!--link A to UC7-->
+        <g id="link_A_UC7">
+            <path d="M814.5559,566.397 C853.0089,591.216 926.9898,638.9671 972.6228,668.4221 " fill="none" id="A-to-UC7"
+                style="stroke:#181818;stroke-width:1.0;" />
+            <polygon fill="#181818"
+                points="977.6639,671.676,972.2716,663.4345,973.463,668.9644,967.9331,670.1559,977.6639,671.676"
+                style="stroke:#181818;stroke-width:1.0;" />
+        </g>
+        <!--link U to UC1-->
+        <g id="link_U_UC1">
+            <path
+                d="M299.4709,527.529 C328.6049,512.967 395.9349,480.431 455.2509,460 C483.4679,450.281 509.7118,443.2343 536.5568,436.8883 "
+                fill="none" id="U-to-UC1" style="stroke:#181818;stroke-width:1.0;" />
+            <polygon fill="#181818"
+                points="542.3959,435.508,532.7171,433.6858,537.53,436.6583,534.5575,441.4712,542.3959,435.508"
+                style="stroke:#181818;stroke-width:1.0;" />
+        </g>
+        <!--link U to UC2-->
+        <g id="link_U_UC2">
+            <path d="M299.5679,533.171 C339.8349,528.202 447.3581,514.9309 522.9461,505.6029 " fill="none" id="U-to-UC2"
+                style="stroke:#181818;stroke-width:1.0;" />
+            <polygon fill="#181818"
+                points="528.9009,504.868,519.4788,502.0004,523.9385,505.4804,520.4586,509.9402,528.9009,504.868"
+                style="stroke:#181818;stroke-width:1.0;" />
+        </g>
+        <!--reverse link UC3 to U-->
+        <g id="link_UC3_U">
+            <path
+                d="M166.145,83.2929 C133.1713,91.5829 107.2116,105.97 90.2509,135.5 C6,282.184 208.4819,471.029 267.9339,521.898 "
+                fill="none" id="UC3-backto-U" style="stroke:#181818;stroke-width:1.0;" />
+            <polygon fill="#181818"
+                points="171.9639,81.83,162.2602,80.1451,167.1148,83.0491,164.2108,87.9037,171.9639,81.83"
+                style="stroke:#181818;stroke-width:1.0;" />
+        </g>
+        <!--link U to UC9-->
+        <g id="link_U_UC9">
+            <path d="M299.5679,536.829 C336.3579,541.369 428.3031,552.717 502.5851,561.885 " fill="none" id="U-to-UC9"
+                style="stroke:#181818;stroke-width:1.0;" />
+            <polygon fill="#181818"
+                points="508.5399,562.62,500.0976,557.5477,503.5776,562.0075,499.1177,565.4874,508.5399,562.62"
+                style="stroke:#181818;stroke-width:1.0;" />
+        </g>
+        <!--link U to UC13-->
+        <g id="link_U_UC13">
+            <path
+                d="M299.3689,516.728 C326.3299,484.495 387.3669,418.102 455.2509,388 C618.2589,315.716 826.847,311.3246 935.973,314.8076 "
+                fill="none" id="U-to-UC13" style="stroke:#181818;stroke-width:1.0;" />
+            <polygon fill="#181818"
+                points="941.9699,314.999,933.1021,310.7139,936.9724,314.8395,932.8469,318.7099,941.9699,314.999"
+                style="stroke:#181818;stroke-width:1.0;" />
+        </g>
+        <!--link U to UC14-->
+        <g id="link_U_UC14">
+            <path
+                d="M299.2679,506.135 C324.2029,459.892 379.8579,370.13 455.2509,328 C615.4609,238.474 834.7678,238.5501 943.1518,245.1001 "
+                fill="none" id="U-to-UC14" style="stroke:#181818;stroke-width:1.0;" />
+            <polygon fill="#181818"
+                points="949.1409,245.462,940.3986,240.9264,944.15,245.1604,939.916,248.9118,949.1409,245.462"
+                style="stroke:#181818;stroke-width:1.0;" />
+        </g>
+        <!--link U to UC8-->
+        <g id="link_U_UC8">
+            <path
+                d="M297.1609,573.064 C318.6639,631.922 369.0169,743.025 455.2509,789 C606.7229,869.757 810.1011,837.0973 924.1561,808.5823 "
+                fill="none" id="U-to-UC8" style="stroke:#181818;stroke-width:1.0;" />
+            <polygon fill="#181818"
+                points="929.9769,807.127,920.2755,805.4294,925.1262,808.3397,922.2158,813.1905,929.9769,807.127"
+                style="stroke:#181818;stroke-width:1.0;" />
+        </g>
+        <!--link U to UC4-->
+        <g id="link_U_UC4">
+            <path
+                d="M288.8919,573.208 C299.8009,653.205 337.1609,837.854 455.2509,922 C592.0569,1019.482 792.6393,1007.0897 912.0083,988.2437 "
+                fill="none" id="U-to-UC4" style="stroke:#181818;stroke-width:1.0;" />
+            <polygon fill="#181818"
+                points="917.9349,987.308,908.4212,984.7605,912.9961,988.0877,909.6688,992.6626,917.9349,987.308"
+                style="stroke:#181818;stroke-width:1.0;" />
+        </g>
+        <!--link U to UC16-->
+        <g id="link_U_UC16">
+            <path
+                d="M285.6179,573.135 C289.9689,665.077 314.9789,899.369 455.2509,1008 C589.1489,1111.6958 793.1423,1099.1946 913.3933,1080.0799 "
+                fill="none" id="U-to-UC16" style="stroke:#181818;stroke-width:1.0;" />
+            <polygon fill="#181818"
+                points="919.3189,1079.138,909.8025,1076.6005,914.3809,1079.9229,911.0584,1084.5013,919.3189,1079.138"
+                style="stroke:#181818;stroke-width:1.0;" />
+        </g>
+        <!--link U to UC17-->
+        <g id="link_U_UC17">
+            <path
+                d="M292.9079,573.259 C309.7779,641.827 355.5749,784.322 455.2509,847 C598.9079,937.334 801.0074,918.6617 917.9334,897.2107 "
+                fill="none" id="U-to-UC17" style="stroke:#181818;stroke-width:1.0;" />
+            <polygon fill="#181818"
+                points="923.8349,896.128,914.2609,893.8177,918.917,897.0302,915.7044,901.6864,923.8349,896.128"
+                style="stroke:#181818;stroke-width:1.0;" />
+        </g>
+        <!--SRC=[ZPF1ReCm38RlVegeTwILjcjxgSGwQJrDKoLszqBQMMC49NIJDktTvz1G6g0I7C1sFZk_dP2hGoKgBGmTtokHaL6o8bq0oaeRaLfb15gHUZ_9FgbmWGG0IfGVU5HYhvZwmby0mS_9AebMYSbUOKu_Q9hrILreEmsfBHPIvJqg3gbNbh4Zon88Sv5TzhGUN_Vn3h48YITbNPkyxuCkT0DDf_3NzlN26tAusrSz0ruodBpJ_2PjdQGptbIwkvqKWek-z4UofIxeZNBACElLdWKYyQXjLo87-tEV3J51z_DXpKwoswN1OhWMyAmhEf14oUDKNidL7P3SXkb00mUu6fbshNS-CYSGVpysAJYa9GnVdZ3Fqmox0K4IdSfeqtGAYJZxvyhWVFRgURAPwUyYshXaI9k5YnKxA-S_jVPcb_YwPTiW7oEaaQkryj-v_tBptbZ-0m00]-->
+    </g>
+</svg>
