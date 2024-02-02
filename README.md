@@ -11,7 +11,7 @@
 ## Modelo de Dominio
 
 - [Diagrama de clases](DiagramaDeClases/DiagramaDeClases.svg)
-- [Diagrama de estado](DiagramaDeClases/DiagramaDeClases.svg)
+- [Diagrama de estado](DiagramaDeEstado/ModeloDeEstado.svg)
 - [Diagrama de objetos](DiagramaDeObjetos/DiagramaDeObjetos.svg)
 - [Glosario](ModeloDeDominio/Glosario.md)
 
