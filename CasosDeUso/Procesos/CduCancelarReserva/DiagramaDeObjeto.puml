@@ -6,10 +6,12 @@ object Usuario {
 object Reserva {
   fechaHora: DateTime
   estado: String
+  climaActual: String
 }
 
 object SistemaDeCancelacion {
-  Tiempo Minimo De Cancelación: Int = 48
+  tiempoMin: Int = 48
+  lluviaDiaReserva: Bool = false;
 }
 
 Usuario --> Reserva : realiza
