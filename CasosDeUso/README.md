@@ -42,9 +42,9 @@
 
 5. **Cancelar reserva**
 
-   - [Diagrama de estados]()
-   - [Diagrama de objetos]()
-   - [Diagrama de flujo]()
+   - [Diagrama de estados](Procesos/CduCancelarReserva/DiagramaDeEstados.svg)
+   - [Diagrama de objetos](Procesos/CduCancelarReserva/DiagramaDeObjetos.svg)
+   - [Diagrama de flujo](Procesos/CduCancelarReserva/DiagramaDeFlujo.svg)
 
 7. **Administrar**
 
