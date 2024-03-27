@@ -10,9 +10,10 @@
 
 ## Casos de uso
 
-  <img src="CasoDeUsoSVG.svg" alt="Imagen" style="margin-right: 20px;">
-  
-  <div>
+ | Imagen                                     |                                 |
+| ------------------------------------------ | -------------------------------------- |
+| ![Texto alternativo](CasosDeUso/Imagenes/Notificaciones.svg) | [Enlace a la carpeta](CduDetallados/CduNotoficaciones) |
+
 
 ### Procesos
 
