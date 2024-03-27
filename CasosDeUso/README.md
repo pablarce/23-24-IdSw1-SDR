@@ -9,12 +9,16 @@
 <div style="display: flex">
 
 ## Casos de uso
-
- | Imagen                                     |                                 |
-| ------------------------------------------ | -------------------------------------- |
+### Notificaciones
 | ![Texto alternativo](CasosDeUso/Imagenes/Notificaciones.svg) | [Enlace a la carpeta](CduDetallados/CduNotficaciones) |
+
+### Pistas
 | ![Texto alternativo](CasosDeUso/Imagenes/Pistas.svg) | [Enlace a la carpeta](CduDetallados/CduPistas) |
+
+### Pagos
 | ![Texto alternativo](CasosDeUso/Imagenes/Pagos.svg) | [Enlace a la carpeta](CduDetallados/CduPagos) |
+
+### Reserva
 | ![Texto alternativo](CasosDeUso/Imagenes/Reserva.svg) | [Enlace a la carpeta](CduDetallados/CduReserva) |
 
 
