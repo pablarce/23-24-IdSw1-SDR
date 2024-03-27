@@ -1,0 +1,21 @@
+@startuml
+
+left to right direction
+
+actor User as U
+actor Admin as A
+
+package Pagos{
+
+    usecase "Pagar Reserva" as UC1
+    usecase "Pagar Bonos" as UC2
+    usecase "Ver Historial de Pagos" as UC3
+
+}
+
+U --> UC1
+U --> UC2
+
+A --> UC3
+
+@enduml

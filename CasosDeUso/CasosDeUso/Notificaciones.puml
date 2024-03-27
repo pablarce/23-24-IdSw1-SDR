@@ -1,0 +1,28 @@
+@startuml
+
+left to right direction
+
+actor Time as T
+actor Admin as A
+
+package Notificaciones{
+
+   usecase "Enviar Notificaciones" as UC1
+
+   usecase "Crear tipo de  Notificaciones" as UC2
+   usecase "Leer tipo de  Notificaciones" as UC3
+   usecase "Actualizar tipo de  Notificaciones" as UC4
+   usecase "Borrar tipo de  Notificaciones" as UC5
+}
+
+T --> UC1
+
+
+A --> UC2
+A --> UC5
+A --> UC3
+A --> UC4
+
+
+
+@enduml
