@@ -15,6 +15,7 @@ package Pagos{
 
 U --> UC1
 U --> UC2
+U --> UC3
 
 A --> UC3
 
