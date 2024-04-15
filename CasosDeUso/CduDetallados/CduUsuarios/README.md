@@ -1,4 +1,4 @@
 | Imagen                                     |                                 |
 | ------------------------------------------ | -------------------------------------- |
-| ![Texto alternativo](Login.svg) | [Login.puml ](Login.puml) |
-| ![Texto alternativo](CrearUsuario.svg) | [CrearUsuario.puml ](CrearUsuario.puml) |
+| [Login.puml ](Login.puml) |  ![Texto alternativo](Login.svg)|
+| [CrearUsuario.puml ](CrearUsuario.puml) | ![Texto alternativo](CrearUsuario.svg) |
