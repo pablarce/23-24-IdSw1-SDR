@@ -32,7 +32,7 @@
 ### Usuario
 | Imagen                                     |                                 |
 | ------------------------------------------ | -------------------------------------- |
-| ![Texto alternativo](CasosDeUso/Imagenes/Usuario.svg) | [Enlace a la carpeta](CduDetallados/Usuario) |
+| ![Texto alternativo](CasosDeUso/Imagenes/Usuario.svg) | [Enlace a la carpeta](CduDetallados/Usuarios) |
 
 
 
