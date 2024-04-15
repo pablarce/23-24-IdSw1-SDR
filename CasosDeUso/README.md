@@ -10,8 +10,7 @@
 
 ## Casos de uso
 ### Notificaciones
-| Imagen                                     |                                 |
-| ------------------------------------------ | -------------------------------------- |
+
 | ![Texto alternativo](CasosDeUso/Imagenes/Notificaciones.svg) | [Enlace a la carpeta](CduDetallados/CduNotficaciones) |
 
 ### Pistas
