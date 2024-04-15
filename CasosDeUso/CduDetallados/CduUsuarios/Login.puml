@@ -1,0 +1,17 @@
+@startuml
+[*] --> NoAutenticado : Inicio
+
+state NoAutenticado {
+  [*] --> EsperandoCredenciales : Usuario accede al sistema
+  EsperandoCredenciales --> VerificandoCredenciales : Credenciales ingresadas
+  VerificandoCredenciales --> Autenticado : Credenciales válidas
+  VerificandoCredenciales --> NoAutenticado : Credenciales inválidas
+  Autenticado --> [*] : Cerrar sesión
+}
+
+state Autenticado {
+  [*] --> PaginaPrincipal : Mostrar página principal
+  PaginaPrincipal --> [*] : Cerrar sesión
+}
+
+@enduml

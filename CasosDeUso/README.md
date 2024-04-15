@@ -29,7 +29,10 @@
 | ------------------------------------------ | -------------------------------------- |
 | ![Texto alternativo](CasosDeUso/Imagenes/Reserva.svg) | [Enlace a la carpeta](CduDetallados/CduReserva) |
 
-
+### Usuario
+| Imagen                                     |                                 |
+| ------------------------------------------ | -------------------------------------- |
+| ![Texto alternativo](CasosDeUso/Imagenes/Usuario.svg) | [Enlace a la carpeta](CduDetallados/Usuario) |
 
 
 
