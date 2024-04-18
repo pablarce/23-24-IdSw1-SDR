@@ -12,10 +12,9 @@ note right of VerificarUsuario
  del usuario/administrador
 end note
 
-VerificarUsuario --> IdentidadConfirmada
 
-IdentidadConfirmada --> UsuarioPropio
-IdentidadConfirmada -> Administrador
+VerificarUsuario --> UsuarioPropio
+VerificarUsuario --> Administrador
 
 UsuarioPropio --> ConfirmarBorrado : Confirmación
 
