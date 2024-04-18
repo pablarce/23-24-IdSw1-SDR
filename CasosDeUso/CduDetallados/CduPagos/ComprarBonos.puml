@@ -33,7 +33,7 @@ y se le recomienda que vuelva
 a intentar más tarde
 end note
 
-ConfirmarCompra --> MostrarConfirmacion
+ConfirmarCompra ---> MostrarConfirmacion
 note  on  link
 Se añaden los fondos 
 a la cuenta del usuario
