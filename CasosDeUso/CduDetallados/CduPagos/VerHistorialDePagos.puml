@@ -1,0 +1,31 @@
+@startuml
+
+[*] --> VerHistorialReservas
+note right of VerHistorialReservas
+ El usuario accede al historial 
+ de sus reservas previas
+end note
+
+VerHistorialReservas --> ConsultarReservas
+note right of ConsultarReservas
+ El sistema consulta la base de datos 
+ para obtener el historial de reservas
+end note
+
+ConsultarReservas --> MostrarHistorial
+note on link
+Se agrega un filtro a la consulta
+que varía según el tipo de usuario
+end note
+note right of MostrarHistorial
+**Historial de Usuario**
+El sistema presenta al usuario 
+su historial de reservas.
+
+**Historial de Administrador**
+El sistema exhibe al administrador
+el historial de reservas.
+end note
+
+MostrarHistorial --> [*]
+@enduml

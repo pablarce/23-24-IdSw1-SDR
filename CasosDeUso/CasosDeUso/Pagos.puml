@@ -8,14 +8,16 @@ actor Admin as A
 package Pagos{
 
     usecase "Pagar Reserva" as UC1
-    usecase "Pagar Bonos" as UC2
+    usecase "Pagar con Bonos" as UC2
     usecase "Ver Historial de Pagos" as UC3
+    usecase "Comprar Bonos" as UC4
 
 }
 
 U --> UC1
 U --> UC2
 U --> UC3
+U --> UC4
 
 A --> UC3
 
