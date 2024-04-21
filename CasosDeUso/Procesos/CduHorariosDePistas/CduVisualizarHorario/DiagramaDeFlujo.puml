@@ -1,0 +1,6 @@
+@startuml
+start
+:Acceder a la aplicación;
+:Seleccionar "ver estados de las reservas";
+stop
+@enduml

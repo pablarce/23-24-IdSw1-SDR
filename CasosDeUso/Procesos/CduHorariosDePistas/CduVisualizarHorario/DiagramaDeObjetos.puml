@@ -1,0 +1,9 @@
+@startuml
+object Usuario
+object Aplicacion
+object Reservas
+
+Usuario -> Aplicacion : Acceder
+Usuario --> Aplicacion : Ver estados de las reservas
+Aplicacion --> Reservas : Visualizar
+@enduml

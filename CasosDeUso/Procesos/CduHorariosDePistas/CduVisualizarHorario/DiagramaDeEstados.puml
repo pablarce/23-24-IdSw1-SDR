@@ -1,0 +1,8 @@
+@startuml
+[*] --> Inicio
+Inicio --> PaginaPrincipal : Usuario accede a la aplicación
+PaginaPrincipal : Usuario selecciona "ver estados de reserva"
+PaginaPrincipal --> Reservas : ver reservas
+Reservas : Usuario visualiza las reservas
+Reservas --> [*]
+@enduml
