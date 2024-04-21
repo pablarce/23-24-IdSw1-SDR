@@ -1,7 +1,7 @@
 @startuml
 [*] --> Inicio
 Inicio --> Formulario : Usuario accede a la web
-Formulario : Usuario llena el formulario
+Formulario : DNI\nEmail\nNombre\nNumero de telefono\nCodigo postal
 Formulario --> DatosValidados : Enviar formulario
 DatosValidados : Verificar datos
 DatosValidados --> CuentaCreada : Datos válidos

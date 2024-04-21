@@ -2,13 +2,12 @@
 [*] --> PermitirNotificaciones : Iniciar
 PermitirNotificaciones --> PermisoAceptado : Aceptar
 PermitirNotificaciones --> PermisoDenegado : Rechazar
-PermisoAceptado --> NotificacionInicio : 10 min. antes de hora inicio
-NotificacionInicio --> InicioActividad : Confirmar Actividad
-InicioActividad --> DesarrolloActividad
-DesarrolloActividad --> NotificacionFin : 3 min. antes de hora fin
-NotificacionFin --> XXComprobacionPistaLibreXX : Confirmar Fin
-XXComprobacionPistaLibreXX --> PistaLibre
-NotificacionInicio --> ActividadNoIniciada : Actividad No Confirmada
+PermisoAceptado --> NotificacionReserva : Confirmar reserva
+NotificacionReserva --> NotificacionAcceso : Confirmar acceso con código
+NotificacionReserva --> ActividadNoIniciada : Código QR no escaneado
+NotificacionAcceso --> DesarrolloActividad
+DesarrolloActividad --> NotificacionFin : Confirmar abandono de pista con código
+NotificacionFin --> PistaLibre : Actividad finalizada
 ActividadNoIniciada --> PistaLibre
 PistaLibre --> [*]
 PermisoDenegado --> [*] : Cancelar
