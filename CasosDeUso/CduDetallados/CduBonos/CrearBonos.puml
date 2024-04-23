@@ -1,0 +1,10 @@
+@startuml
+title Crear Bonos (Admin)
+
+[*] --> Inicio
+Inicio --> FormularioDeCreacion : Abrir Formulario
+FormularioDeCreacion --> ValidacionDatos : Completar Datos
+ValidacionDatos --> BonoCreado : Confirmar Creación
+BonoCreado --> [*] : Finalizar
+
+@enduml

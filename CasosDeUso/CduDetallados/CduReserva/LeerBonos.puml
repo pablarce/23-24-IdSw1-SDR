@@ -1,9 +1,0 @@
-@startuml
-title Leer Bonos (Admin)
-
-[*] --> Inicio
-Inicio --> ListaDeBonos : Cargar Bonos
-ListaDeBonos --> VerDetalle : Seleccionar Bono
-VerDetalle --> [*] : Finalizar
-
-@enduml
