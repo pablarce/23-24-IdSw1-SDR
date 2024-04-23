@@ -1,0 +1,17 @@
+@startuml
+title Realizar Reserva
+
+[*] --> Inicio
+Inicio --> VerificarEstudiante : Iniciar Proceso
+VerificarEstudiante --> NoEsEstudiante : No Es Estudiante
+VerificarEstudiante --> VerificarUltimaReserva : Es Estudiante
+VerificarUltimaReserva --> ReservaDemasiadoPronto : Menos de 7 Días
+VerificarUltimaReserva --> SeleccionarCancha : Tiempo Suficiente
+SeleccionarCancha --> ElegirFechaHora : Escoger Disponibilidad
+ElegirFechaHora --> ConfirmacionReserva : Confirmar Datos
+ConfirmacionReserva --> ReservaConfirmada : Validar
+ReservaConfirmada --> [*] : Finalizar
+NoEsEstudiante --> [*] : Finalizar
+ReservaDemasiadoPronto --> [*] : Finalizar
+
+@enduml
