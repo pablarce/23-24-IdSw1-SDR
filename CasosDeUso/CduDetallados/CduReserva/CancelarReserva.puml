@@ -1,0 +1,12 @@
+@startuml
+title Cancelar Reserva
+
+[*] --> SeleccionDeReserva
+SeleccionDeReserva --> VerificarCondiciones : Elegir Reserva
+VerificarCondiciones --> NoSePuedeCancelar : Mismo Día Sin Clima Adverso
+VerificarCondiciones --> ConfirmacionCancelar : Anticipación Suficiente o Clima Adverso
+ConfirmacionCancelar --> ReservaCancelada : Confirmar Cancelación
+NoSePuedeCancelar --> [*] : Finalizar
+ReservaCancelada --> [*] : Finalizar
+
+@enduml
