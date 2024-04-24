@@ -2,8 +2,19 @@
 title Borrar Bonos (Admin)
 
 [*] --> Inicio
+note right of Inicio
+El administrador empieza desde la 
+página de inicio de la aplicación
+end note
+
 Inicio --> ListaDeBonos : Cargar Bonos
+
 ListaDeBonos --> ConfirmarBorrado : Seleccionar Bono
+note left of ListaDeBonos 
+El administrador accede a la opción de
+ver la lista de bonos que ha creado
+endnote
+
 ConfirmarBorrado --> BonoBorrado
 BonoBorrado --> ListaDeBonos : Borrar Otro
 BonoBorrado --> [*] : Finalizar

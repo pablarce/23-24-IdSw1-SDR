@@ -2,9 +2,26 @@
 title Crear Bonos (Admin)
 
 [*] --> Inicio
+note right of Inicio
+El administrador empieza desde la 
+página de inicio de la aplicación
+end note
+
 Inicio --> FormularioDeCreacion : Abrir Formulario
+
 FormularioDeCreacion --> ValidacionDatos : Completar Datos
+note left of FormularioDeCreacion 
+El administrador accede al formulario
+para crear un nuevo bono
+end note
+
 ValidacionDatos --> BonoCreado : Confirmar Creación
+note right of ValidacionDatos 
+El administrador completa todos
+los parámetros del formulario que sean 
+necesarios para crear el bono
+end note
+
 BonoCreado --> [*] : Finalizar
 
 @enduml

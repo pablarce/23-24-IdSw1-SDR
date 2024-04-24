@@ -3,7 +3,22 @@ title Leer Bonos (Admin)
 
 [*] --> Inicio
 Inicio --> ListaDeBonos : Cargar Bonos
+note right of Inicio
+El administrador empieza desde la 
+página de inicio de la aplicación
+end note
+
 ListaDeBonos --> VerDetalle : Seleccionar Bono
+note left of ListaDeBonos 
+El administrador accede a la 
+opción de ver la lista de bonos creados
+end note
+
+
 VerDetalle --> [*] : Finalizar
+note right of VerDetalle 
+El administrador puede ver cada bono
+individualmente para verlo detalladamente
+end note
 
 @enduml
