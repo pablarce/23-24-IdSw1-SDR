@@ -5,7 +5,9 @@ PaginaPrincipal --> EditarHorarios : Usuario selecciona "Editar Horarios"
 EditarHorarios --> ConfirmarEdicion : "editar horarios"
 ConfirmarEdicion --> Error : Confirmación fallida
 Error --> EditarHorarios : Volver a intentar editar
-ConfirmarEdicion --> [*] : Confirmación exitosa
+ConfirmarEdicion --> NotificarUsuarios : Confirmación exitosa
+NotificarUsuarios --> [*] : Notificación exitosa
+
 
 note right of Inicio
 Usuario accede a la aplicación
@@ -19,5 +21,9 @@ Aqui el usuario ha de seleccionar una pista,
 end note
 note right of Error
 Error de permisos o de conexión
+end note
+note left of NotificarUsuarios
+Verificar si alguna reserva ha sido afectada
+por esta modificación, notificar a los usuarios
 end note
 @enduml
