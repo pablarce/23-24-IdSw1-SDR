@@ -1,0 +1,23 @@
+@startuml
+[*] --> Inicio
+Inicio --> PaginaPrincipal
+PaginaPrincipal --> EditarHorarios : Usuario selecciona "Editar Horarios"
+EditarHorarios --> ConfirmarEdicion : "editar horarios"
+ConfirmarEdicion --> Error : Confirmación fallida
+Error --> EditarHorarios : Volver a intentar editar
+ConfirmarEdicion --> [*] : Confirmación exitosa
+
+note right of Inicio
+Usuario accede a la aplicación
+end note
+note right of PaginaPrincipal
+Usuario selecciona "Editar horarios de pistas"
+end note
+note right of EditarHorarios
+Aqui el usuario ha de seleccionar una pista,
+ y un nuevo horario de apertura
+end note
+note right of Error
+Error de permisos o de conexión
+end note
+@enduml
