@@ -1,0 +1,79 @@
+@startuml Sistema de reservas
+entity Pista {
+  + número
+  + capacidad
+}
+
+entity Padel {
+  + CapasidadMaxima
+}
+
+
+entity Calendario {
+  + eventos
+}
+
+entity Usuario {
+  + nombre
+  + email
+  + telefono
+}
+
+entity Pago {
+  + metodoPago
+  + monto
+}
+
+entity Factura {
+  + fechaEmision
+  + total
+  + estado
+}
+
+entity Tarifas {
+  + precioHora
+}
+
+entity Disponibilidad {
+  + horasDisponibles
+}
+
+entity Reserva {
+  + fechaInicio
+  + fechaFin
+}
+
+entity CancelarReserva {
+}
+
+entity Fecha {
+  + dia
+  + mes
+  + año
+}
+
+entity Horas {
+  + hora
+  + minutos
+}
+
+
+
+SistemaDeReservas --- Usuario: Tiene
+SistemaDeReservas --- Reserva: Gestiona
+SistemaDeReservas --- Pista: Gestiona
+Usuario --- Reserva: Hace
+Reserva -L- Calendario: tiene
+Usuario -R- Pago: Realiza
+Pago --- Factura: Que genera 
+Factura --- Usuario: Que se le entrega
+Reserva --- Pago: Requiere
+Reserva --- Pista: Se reserva una
+Reserva -L- CancelarReserva: Se puede cancelar
+Pista--- Padel
+Pista -R- Tarifas: Tiene
+Padel --- Disponibilidad: Tiene
+Disponibilidad--- Calendario: Tiene
+Calendario --- Fecha
+Calendario --- Horas
+@enduml
