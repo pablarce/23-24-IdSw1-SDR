@@ -2,10 +2,32 @@
 title Cancelar Reserva
 
 [*] --> SeleccionDeReserva
+note right of SeleccionDeReserva
+ El usuario selecciona la reserva que desea cancelar
+end note
+
 SeleccionDeReserva --> VerificarCondiciones : Elegir Reserva
-VerificarCondiciones --> NoSePuedeCancelar : Mismo Día Sin Clima Adverso
-VerificarCondiciones --> ConfirmacionCancelar : Anticipación Suficiente o Clima Adverso
+note right of VerificarCondiciones
+ El sistema verifica si la cancelación cumple con las políticas:
+ - No se permite cancelar el mismo día, a menos que el clima no sea óptimo.
+ - Se permite la cancelación con al menos 24 horas de anticipación.
+end note
+
+VerificarCondiciones --> NoSePuedeCancelar 
+note left of NoSePuedeCancelar
+ La reserva no se puede cancelar debido a que es el mismo día y 
+ las condiciones climáticas son óptimas.
+end note
+
+VerificarCondiciones --> ConfirmacionCancelar
+note right of ConfirmacionCancelar
+ El usuario procede a confirmar la cancelación de la reserva
+ bajo las condiciones permitidas.
+end note
+
 ConfirmacionCancelar --> ReservaCancelada : Confirmar Cancelación
+
+
 NoSePuedeCancelar --> [*] : Finalizar
 ReservaCancelada --> [*] : Finalizar
 
