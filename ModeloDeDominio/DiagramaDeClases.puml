@@ -5,7 +5,7 @@ entity Reserva {
   + fecha
   + hora
   + disponibilidad
-  + pago
+  + idPago
 }
 
 note right of Reserva: El sistema crea, cancela y muestra el historial de reservas.
@@ -22,6 +22,7 @@ entity Pista {
 }
 
 entity Pago {
+  + id
   + metodoPago
   + monto
 }
