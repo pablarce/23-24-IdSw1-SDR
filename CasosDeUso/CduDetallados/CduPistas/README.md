@@ -1,7 +1,8 @@
-## Cdu pistas
+| [ActualizarHorariosPista.puml](ActualizarPista.puml) |  ![Texto alternativo](ActualizarHorariosPista.svg)|
+| ------------------------------------------ | -------------------------------------- |
+| [ActualizarPista.puml ](ActualizarPista.puml) | ![Texto alternativo](ActualizarPista.svg) |
+| [BorrarPista.puml ](BorrarPista.puml) | ![Texto alternativo](BorrarPista.svg) |
+| [CrearPista.puml ](CrearPista.puml) | ![Texto alternativo](CrearPista.svg) |
+| [LeerHorariosPista..puml ](LeerHorariosPista.puml) | ![Texto alternativo](LeerHorariosPista..svg) |
+| [LeerPista.puml ](LeerPistaLeerPista.puml) | ![Texto alternativo](.svg) |
 
-### Descripción
-
-En estos casos de uso se describe la funcionalidad de la aplicación para gestionar las pistas de padel.
-
-No se encuentra la opción de borrar o crear los horarios, ya que todas las pistas tienen un horario. Si se quiere eliminar un horario, se debe eliminar la pista, y lo mismo para crear un horario. Una alternativa sería modificar la franja horaria a 0 horas.
