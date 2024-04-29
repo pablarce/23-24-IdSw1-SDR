@@ -1,0 +1,25 @@
+@startuml
+
+left to right direction
+
+actor Admin as A
+
+
+package Bonos{
+
+    usecase "Crear Bonos" as UC1
+    usecase "Leer Bonos" as UC2
+    usecase "Actualizar  Bonos" as UC3
+    usecase "Borrar Bonos" as UC4
+    
+}
+
+A --> UC1
+A --> UC2
+A --> UC3
+A --> UC4
+
+@enduml
+    
+    
+    
