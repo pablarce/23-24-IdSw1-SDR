@@ -34,6 +34,9 @@
 | ------------------------------------------ | -------------------------------------- |
 | ![Texto alternativo](CasosDeUso/Imagenes/Usuario.svg) | [Enlace a la carpeta](CduDetallados/CduUsuarios) |
 
-
+### Bonos
+| Imagen                                     |                                 |
+| ------------------------------------------ | -------------------------------------- |
+| ![Texto alternativo](CasosDeUso/Imagenes/Bonos.svg) | [Enlace a la carpeta](CduDetallados/CduBonos) |
 
 
