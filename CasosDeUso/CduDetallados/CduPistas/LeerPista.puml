@@ -1,0 +1,27 @@
+@startuml 
+[*] --> UsuarioSolicitaPistas
+UsuarioSolicitaPistas -d-> SistemaMuestraPistas
+note left of UsuarioSolicitaPistas
+    El usuario solicita las pistas al sistema
+end note
+
+SistemaMuestraPistas -d-> UsuarioDecideProximaOperacion
+note left of SistemaMuestraPistas
+    El sistema muestra las pistas al usuario
+    para que este decida que hacer a continuacion
+end note
+UsuarioDecideProximaOperacion --> UsuarioSolicitaPistas
+note on link
+    **Recarga**
+end note
+SistemaMuestraPistas -d-> Error
+Error -d-> [*]
+note on link
+    **Fin**
+end note
+UsuarioDecideProximaOperacion -d-> [*]
+note left of UsuarioDecideProximaOperacion
+    El usuario decidira que hacer a continuacion
+end note
+
+@enduml
