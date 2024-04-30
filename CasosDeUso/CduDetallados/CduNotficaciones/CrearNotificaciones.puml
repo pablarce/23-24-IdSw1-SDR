@@ -1,0 +1,34 @@
+@startuml
+
+[*] --> CrearNotificacion
+note right of CrearNotificacion
+ El administrador accede a la opción 
+ de crear una nueva notificación
+end note
+
+CrearNotificacion --> SeleccionarDestinatario
+note right of SeleccionarDestinatario
+ El administrador selecciona el destinatario 
+ de la notificación
+end note
+
+SeleccionarDestinatario --> IngresarContenido
+note right of IngresarContenido
+ El administrador ingresa el contenido 
+ de la notificación
+end note
+
+IngresarContenido --> ConfirmarContenido : Confirmar
+note right of ConfirmarContenido
+ El administrador confirma el contenido 
+ de la notificación
+end note
+
+ConfirmarContenido --> [*]
+note right of ConfirmarContenido
+ El sistema muestra al administrador 
+ una confirmación del contenido 
+ de la notificación
+end note
+
+@enduml
