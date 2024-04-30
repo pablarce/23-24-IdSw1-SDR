@@ -32,13 +32,7 @@ entity Factura {
 entity Tarifa {
   + precioHora: 8€
 }
-entity FechaHora {
-  + dia: 17
-  + mes: 05
-  + año: 2024
-  + hora: 10:00
-  + minutos 11:00
-}
+
 
 SistemaDeReservas .. Usuario :> Crea y elimina
 SistemaDeReservas --- Reserva : Gestiona
@@ -46,7 +40,6 @@ Usuario --left- Reserva:> realiza
 Reserva --- Pago: requiere
 Reserva --- Pista: se lleva a cabo en
 Pista --- Tarifa: se fija el precio mediante
-Reserva --- FechaHora
 
 Pago --- Factura: Que genera 
 Pago --- Bono : < Puede efectuarse por
