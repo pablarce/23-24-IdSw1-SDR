@@ -1,86 +1,58 @@
 @startuml Sistema de reservas
-entity Pistas {
-  + nombre
-  + capacidad
+
+entity Reserva {
+  + pista
+  + fecha
+  + hora
+  + disponibilidad
+  + idPago
 }
 
-entity Padel {
-  + CapasidadMaxima
-}
-
-entity Polideportivo {
-  + CapasidadMaxima
-}
-
-entity Voleibol {
-  + CapasidadMaximaipo
-}
-
-entity Calendario {
-  + eventos
-}
+note left of Reserva
+ El sistema crea, 
+ cancela y muestra 
+ el historial de reservas.
+ end note
 
 entity Usuario {
   + nombre
   + email
   + telefono
 }
+entity Pista {
+  + número
+  + horario
+  + capacidad
+}
 
-entity Pagos {
+entity Pago {
+  + id
   + metodoPago
   + monto
+}
+
+entity Bono {
+  + horasAbonadas
 }
 
 entity Factura {
   + fechaEmision
   + total
+  + estado
 }
 
-entity Tarifas {
+entity Tarifa {
   + precioHora
 }
 
-entity Disponibilidad {
-  + horasDisponibles
-}
 
-entity Reserva {
-  + fechaInicio
-  + fechaFin
-}
+SistemaDeReservas --- Reserva: Gestiona
+SistemaDeReservas .. Usuario : > Crea y elimina
+Usuario -left- Reserva: > realiza
+Reserva --- Pago: requiere
+Reserva --- Pista: se lleva a cabo en
+Pista --- Tarifa: se fija el precio mediante
+Pago --- Factura: Que genera 
+Pago --- Bono : < Puede efectuarse por
 
-entity CancelarReserva {
-}
-
-entity Fecha {
-  + dia
-  + mes
-  + año
-}
-
-entity Horas {
-  + hora
-  + minutos
-}
-
-
-
-SistemaDeReservas --- Usuario: Tiene
-Usuario --- Reserva: Hace
-Reserva -L- Calendario: tiene
-Usuario -R- Pagos: Realiza
-Pagos --- Factura: Que genera 
-Factura --- Usuario: Que se le entrega
-Reserva --- Pistas: Se realiza en
-Reserva -L- CancelarReserva: Se puede cancelar
-Pistas--- Padel
-Pistas--- Polideportivo
-Pistas--- Voleibol
-Pistas -R- Tarifas: Tiene
-Voleibol --- Disponibilidad: Tiene
-Polideportivo --- Disponibilidad: Tiene
-Padel --- Disponibilidad: Tiene
-Disponibilidad--- Calendario: Tiene
-Calendario --- Fecha
-Calendario --- Horas
 @enduml

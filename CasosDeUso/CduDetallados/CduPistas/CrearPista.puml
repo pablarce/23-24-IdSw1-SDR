@@ -1,0 +1,39 @@
+@startuml 
+[*] -r-> UsuarioSolicitaMenuCrearPista
+UsuarioSolicitaMenuCrearPista -d-> SistemaMuestraMenuCrearPista
+note right of UsuarioSolicitaMenuCrearPista
+    El usuario solicita acceder 
+    al menu de crear pista
+end note
+SistemaMuestraMenuCrearPista -r-> UsuarioIntroduceDatosPista
+note left of SistemaMuestraMenuCrearPista
+    El sistema muestra
+    el menu  para introducir
+    los datos de la pista
+end note
+UsuarioIntroduceDatosPista -d-> UsuarioSolicitaCrearPista 
+note right of UsuarioIntroduceDatosPista
+    El usuario introduce los datos
+    de la pista
+end note
+UsuarioSolicitaCrearPista -r-> SistemaCreaPista
+note left of UsuarioSolicitaCrearPista
+    El usuario solicita 
+    crear la pista
+end note
+SistemaCreaPista -d-> SistemaMuestraNuevaPista
+note right of SistemaCreaPista
+    El sistema 
+    crea la pista
+end note
+SistemaCreaPista -d-> Error
+Error-d-> [*]
+SistemaMuestraNuevaPista -d-> [*]
+note left of SistemaMuestraNuevaPista
+    El sistema muestra 
+    la nueva pista
+end note
+note on link 
+    **Fin**
+end note
+@enduml 

@@ -2,13 +2,26 @@
 title Realizar Reserva
 
 [*] --> Inicio
+note right of Inicio
+ El usuario inicia el proceso de reserva. Solo estudiantes de la universidad pueden hacer reservas.
+end note
+
 Inicio --> VerificarEstudiante : Iniciar Proceso
 VerificarEstudiante --> NoEsEstudiante : No Es Estudiante
 VerificarEstudiante --> VerificarUltimaReserva : Es Estudiante
+note right of VerificarUltimaReserva
+ Se verifica la fecha de la última reserva: no se permite reservar si la última fue hace menos de 7 días.
+end note
+
 VerificarUltimaReserva --> ReservaDemasiadoPronto : Menos de 7 Días
 VerificarUltimaReserva --> SeleccionarCancha : Tiempo Suficiente
 SeleccionarCancha --> ElegirFechaHora : Escoger Disponibilidad
+
 ElegirFechaHora --> ConfirmacionReserva : Confirmar Datos
+note right of ConfirmacionReserva
+ El usuario confirma los detalles de la reserva, finalizando con la validación de la misma.
+end note
+
 ConfirmacionReserva --> ReservaConfirmada : Validar
 ReservaConfirmada --> [*] : Finalizar
 NoEsEstudiante --> [*] : Finalizar

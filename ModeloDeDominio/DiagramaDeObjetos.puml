@@ -1,77 +1,47 @@
 @startuml
-entity Pistas {
-  + nombre: "Padel"
-  + capacidad "4"
-}
-
-entity Padel {
-  + CapasidadMaxima: "4"
-}
-
-
-
-entity Calendario {
-  + eventos: "Libre"
-}
-
-entity Usuario {
-  + nombre: "JonDoe"
-  + email: "Jon.Doe@alumnos.unetalantico.es"
-  + telefono:"+34 123456789"
-}
-
-entity Pagos {
-  + metodoDePago: "Trajeta de Credito"
-  + monto: "8€"
-}
-
-entity Factura {
-  + fechaEmision: "01/01/2024 "
-  + total: "8€"
-}
-
-entity Tarifas {
-  + precioHora:"8€"
-}
-
-entity Disponibilidad {
-  + horasDisponibles:"10:00 - 19:00"
-}
 
 entity Reserva {
-  + fechaInicio: "10:00"
-  + fechaFin:"11:00"
+  + pista : 1
+  + fecha: 17/05/2024
+  + hora: 10:00
+  + disponibilidad: sí
+  + idPago: 198341
+}
+entity Usuario {
+  + nombre: JonDoe
+  + email: Jon.Doe@alumnos.unetalantico.es
+  + telefono: +34 123456789
+}
+entity Pista {
+  + número: 1 
+  + horario: 8:00-20:00
+  + capacidad: 4
+}
+entity Pago {
+  + metodoDePago: Tarjeta de Crédito
+  + monto: 8€
+}
+entity Bono {
+  + horasAbonadas: 3
+}
+entity Factura {
+  + fechaEmision: 17/05/2024 
+  + total: 8€
+  + estado: Pendiente
+}
+entity Tarifa {
+  + precioHora: 8€
 }
 
-entity CancelarReserva {
-}
 
-entity Fecha {
-  + dia: "08"
-  + mes: "01"
-  + año: "2024"
-}
+SistemaDeReservas .. Usuario :> Crea y elimina
+SistemaDeReservas --- Reserva : Gestiona
+Usuario --left- Reserva:> realiza
+Reserva --- Pago: requiere
+Reserva --- Pista: se lleva a cabo en
+Pista --- Tarifa: se fija el precio mediante
 
-entity Horas {
-  + hora: "10:00"
-  + minutos "11:00"
-}
+Pago --- Factura: Que genera 
+Pago --- Bono : < Puede efectuarse por
 
-
-
-SistemaDeReservas --- Usuario: Tiene
-Usuario --- Reserva: Hace
-Reserva -L- Calendario: tiene
-Usuario -R- Pagos: Realiza
-Pagos --- Factura: Que genera 
-Factura --- Usuario: Que se le entrega
-Reserva --- Pistas: Se realiza en
-Reserva -L- CancelarReserva: Se puede cancelar
-Pistas--- Padel
-
-Pistas -R- Tarifas: Tiene
-Padel --- Disponibilidad: Tiene
-Disponibilidad--- Calendario: Tiene
-Calendario --- Fecha
-Calendario --- Horas
 @enduml

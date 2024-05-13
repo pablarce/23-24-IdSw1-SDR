@@ -1,0 +1,32 @@
+@startuml 
+[*] --> UsuarioSolicitaPista
+UsuarioSolicitaPista -d-> SistemaMuestraPista
+note left of UsuarioSolicitaPista
+    El usuario solicita una pista
+end note
+SistemaMuestraPista -d-> UsuarioIntroduceModificaciones
+note left of SistemaMuestraPista
+    El sistema muestra la pista
+end note
+SistemaMuestraPista -d-> Error
+UsuarioIntroduceModificaciones -d-> SistemaModificaPista
+note left of UsuarioIntroduceModificaciones
+    El usuario introduce las 
+    modificaciones necesarias
+end note
+SistemaModificaPista -d-> SistemaMuestraPistaModificada
+note left of SistemaModificaPista
+    El sistema modifica la pista
+end note
+SistemaModificaPista -r-> Error
+note left of SistemaMuestraPistaModificada
+    El sistema muestra
+    la pista modificada
+end note
+Error -d-> [*]
+SistemaMuestraPistaModificada -d-> [*]
+note on link
+    **Fin**
+end note
+
+@enduml
