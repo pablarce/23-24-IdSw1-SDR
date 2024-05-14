@@ -25,13 +25,13 @@
 
 ## Diagrama de clases
 
-| ![Clases](DiagramaDeClases.svg) | 
+| ![Clases](DiagramaDeClases/DiagramaDeClases.svg) | 
 |  :-----------------------------------------------: |
 |      [Código](DiagramaDeClases/DiagramaDeClases.puml)     |
 
 ## Diagrama de objetos
 
-| ![Objetos](DiagramaDeObjetos.svg) | 
+| ![Objetos](DiagramaDeObjetos/DiagramaDeObjetos.svg) | 
 |  :-----------------------------------------------: |
 |      [Código](DiagramaDeObjetos/DiagramaDeObjetos.puml)     |
 
