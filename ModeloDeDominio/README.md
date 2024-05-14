@@ -25,18 +25,22 @@
 
 ## Diagrama de clases
 
-| ![Clases](DiagramaDeClases.svg) | 
+| ![Clases](DiagramaDeClases/DiagramaDeClases.svg) | 
 |  :-----------------------------------------------: |
-|      [Código](DiagramaDeClases.puml)     |
+|      [Código](DiagramaDeClases/DiagramaDeClases.puml)     |
 
 ## Diagrama de objetos
 
-| ![Objetos](DiagramaDeObjetos.svg) | 
+| ![Objetos](DiagramaDeObjetos/DiagramaDeObjetos.svg) | 
 |  :-----------------------------------------------: |
-|      [Código](DiagramaDeObjetos.puml)     |
+|      [Código](DiagramaDeObjetos/DiagramaDeObjetos.puml)     |
 
 ## Diagrama de estados
 
-| ![Objetos](DiagramaDeEstados.svg) | 
-|  :-----------------------------------------------: |
-|      [Código](DiagramaDeEstado.puml)     |
+| Imagen                                     |                                 |
+| ------------------------------------------ | -------------------------------------- |
+| ![Texto alternativo](DiagramaDeEstados/Pago/DiagramaEstadosPago.svg) | [Diagrama de estados (Pagos)](ModeloDeDominio/DiagramaDeEstados/Pago/DiagramaEstadosPago.txt) |
+| ![Texto alternativo](DiagramaDeEstados/Pista/DiagramaEstadosPista.svg) | [Diagrama de estados (Pista)](DiagramaDeEstados/Pista/DiagramaEstadosPista.txt) |
+| ![Texto alternativo](DiagramaDeEstados/Sistema/DiagramaEstadosSistema.svg) | [Diagrama de estados (Sistema)](ModeloDeDominio/DiagramaDeEstados/Sistema/DiagramaEstadosSistema.txt) |
+| ![Texto alternativo](DiagramaDeEstados/Usuario/DiagramaEstadosUsuario.svg) | [Diagrama de estados (Usuario)](ModeloDeDominio/DiagramaDeEstados/Usuario/DiagramaEstadosUsuario.txt) |
+
