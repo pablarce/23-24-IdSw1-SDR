@@ -27,13 +27,13 @@
 
 | ![Clases](DiagramaDeClases.svg) | 
 |  :-----------------------------------------------: |
-|      [Código](DiagramaDeClases.puml)     |
+|      [Código](DiagramaDeClases/DiagramaDeClases.puml)     |
 
 ## Diagrama de objetos
 
 | ![Objetos](DiagramaDeObjetos.svg) | 
 |  :-----------------------------------------------: |
-|      [Código](DiagramaDeObjetos.puml)     |
+|      [Código](DiagramaDeObjetos/DiagramaDeObjetos.puml)     |
 
 ## Diagrama de estados
 
