@@ -1,0 +1,75 @@
+@startuml
+
+hide empty description
+
+[*] --> INICIO
+INICIO --> BookingUneat
+note on link
+    Iniciar Sesión
+end note
+
+BookingUneat --> [*]
+note on link
+    Cerar Sesión
+end note
+
+state BookingUneat {
+    [*] --> PantallaPrincipal
+    PantallaPrincipal --> GestionarReservas
+    note on link
+        Realizar Reserva
+        Cancelar Reserva
+        Ver Historial de Reservas
+    end note
+    GestionarReservas --> GestionarReservas
+    note on link
+        Realizar Reserva
+        Cancelar Reserva
+        Ver Historial de Reservas
+    end note
+    GestionarReservas --> PantallaPrincipal
+        note on link
+            Regresar a inicio
+        end note
+
+    PantallaPrincipal --> GestionarUsuarios
+    note on link
+        Borrar Usuario
+    end note
+    GestionarUsuarios --> GestionarUsuarios
+    GestionarUsuarios --> PantallaPrincipal
+    note on link
+        Regresar a inicio
+    end note
+
+    PantallaPrincipal --> GestionarPistas
+    note on link
+        Leer Hoarios de Pistas
+    end note
+    GestionarPistas--> GestionarPistas
+     note on link
+        Leer Hoarios de Pistas
+    end note
+    GestionarPistas --> PantallaPrincipal
+     note on link
+        Regresar a inicio
+    end note
+
+    PantallaPrincipal --> GestionarPagos
+    note on link
+        Pagos Reserva
+        Comprar Bonos
+    end note
+    GestionarPagos --> GestionarPagos
+    note on link
+        Pagos Reserva
+        Comprar Bonos
+    end note
+    GestionarPagos --> PantallaPrincipal
+     note on link
+        Regresar a inicio
+    end note
+
+    
+}
+@enduml
