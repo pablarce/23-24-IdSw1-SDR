@@ -37,6 +37,10 @@
 
 ## Diagrama de estados
 
-| ![Objetos](DiagramaDeEstados.svg) | 
-|  :-----------------------------------------------: |
-|      [Código](DiagramaDeEstado.puml)     |
+| Imagen                                     |                                 |
+| ------------------------------------------ | -------------------------------------- |
+| ![Texto alternativo](DiagramaDeEstados/Pago/DiagramaEstadosPago.svg) | [Diagrama de estados (Pagos)](ModeloDeDominio/DiagramaDeEstados/Pago/DiagramaEstadosPago.txt) |
+| ![Texto alternativo](DiagramaDeEstados/Pista/DiagramaEstadosPista.svg) | [Diagrama de estados (Pagos)](DiagramaDeEstados/Pista/DiagramaEstadosPista.txt) |
+| ![Texto alternativo](DiagramaDeEstados/Sistema/DiagramaEstadosSistema.svg) | [Diagrama de estados (Pagos)](ModeloDeDominio/DiagramaDeEstados/Sistema/DiagramaEstadosSistema.txt) |
+| ![Texto alternativo](DiagramaDeEstados/Usuario/DiagramaEstadosUsuario.svg) | [Diagrama de estados (Pagos)](ModeloDeDominio/DiagramaDeEstados/Usuario/DiagramaEstadosUsuario.txt) |
+
