@@ -1,36 +1,37 @@
 @startuml
 
-entity Reserva {
-  + pista : 1
-  + fecha: 17/05/2024
-  + hora: 10:00
-  + disponibilidad: sí
-  + idPago: 198341
+object SistemaDeReservas
+object Reserva {
+   pista : 1
+   fecha: 17/05/2024
+   hora: 10:00
+   disponibilidad: sí
+   idPago: 198341
 }
-entity Usuario {
-  + nombre: JonDoe
-  + email: Jon.Doe@alumnos.unetalantico.es
-  + telefono: +34 123456789
+object Usuario {
+   nombre: JonDoe
+   email: Jon.Doe@alumnos.unetalantico.es
+   telefono: +34 123456789
 }
-entity Pista {
-  + número: 1 
-  + horario: 8:00-20:00
-  + capacidad: 4
+object Pista {
+   número: 1 
+   horario: 8:00-20:00
+   capacidad: 4
 }
-entity Pago {
-  + metodoDePago: Tarjeta de Crédito
-  + monto: 8€
+object Pago {
+   metodoDePago: Tarjeta de Crédito
+   monto: 8€
 }
-entity Bono {
-  + horasAbonadas: 3
+object Bono {
+   horasAbonadas: 3
 }
-entity Factura {
-  + fechaEmision: 17/05/2024 
-  + total: 8€
-  + estado: Pendiente
+object Factura {
+   fechaEmision: 17/05/2024 
+   total: 8€
+   estado: Pendiente
 }
-entity Tarifa {
-  + precioHora: 8€
+object Tarifa {
+   precioHora: 8€
 }
 
 
