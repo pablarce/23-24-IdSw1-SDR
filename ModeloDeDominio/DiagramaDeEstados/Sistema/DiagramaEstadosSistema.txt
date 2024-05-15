@@ -2,4 +2,5 @@
 hide empty description
 [*] --> Encendido
 Encendido--> Apagado
+Apagado--> Encendido
 @enduml

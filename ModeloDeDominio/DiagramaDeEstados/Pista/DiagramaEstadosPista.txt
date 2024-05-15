@@ -2,4 +2,5 @@
 hide empty description
 [*] --> Ocupada
 Ocupada --> NoOcupada
+NoOcupada--> Ocupada 
 @enduml
