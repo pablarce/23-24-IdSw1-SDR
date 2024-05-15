@@ -1,14 +1,20 @@
 @startuml
 
 [*] --> MetodoDePago
-note right of MetodoDePago
+MetodoDePago --> PagarConBonos
+note  left of PagarConBonos
+Este es el CDU de 
+**PagarConBonos**
+end note
+MetodoDePago --> PagarConTarjeta
+note on link
  El usuario escoje que 
  metodo de pago usar
  
  **Metodo de Pago: Tarjeta**
 end note
 
-MetodoDePago--> RealizarPago
+PagarConTarjeta--> RealizarPago
 note on link
 **Datos De Pago:**
   - Numero de Tarjeta
