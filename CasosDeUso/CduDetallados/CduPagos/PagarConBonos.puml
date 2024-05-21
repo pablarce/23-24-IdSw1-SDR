@@ -1,0 +1,47 @@
+@startuml
+
+[*] --> MetodoDePago
+note right of MetodoDePago
+ El usuario escoje que 
+ metodo de pago usar
+ 
+ **Metodo de Pago: Bono**
+end note
+
+MetodoDePago--> RealizarPago
+note on link
+Se verifica que el usuario
+posea fondos suficientes
+para reslizar el pago
+end note
+note right of RealizarPago
+Se deducen automáticamente 
+los fondos correspondientes 
+al valor de la reserva
+end note
+RealizarPago--> ConfirmarReserva : Pago exitoso
+note left of ConfirmarReserva
+ Despues de verificar el 
+ pago se le envia una 
+ notificacion con el resumen 
+ de la reserva al usuario
+end note
+RealizarPago --> [*]
+note on link
+**Pago Fallido:**
+Se presenta un error al usuario, 
+quien recibe la recomendación 
+de intentarlo nuevamente más tarde.
+
+**Fondos Insuficientes:**
+Se muestra un error al usuario indicando 
+que no dispone de suficientes fondos.
+end note
+ConfirmarReserva --> [*]
+note on link
+ Anadir reserva 
+ a horarios de 
+ la pista
+end note
+
+@enduml

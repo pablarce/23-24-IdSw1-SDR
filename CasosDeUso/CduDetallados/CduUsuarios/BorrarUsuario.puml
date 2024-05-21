@@ -1,0 +1,43 @@
+@startuml
+
+[*] --> BorrarUsuario
+note right of BorrarUsuario
+ El usuario/administrador accede a la opción 
+ de eliminar un usuario del sistema
+end note
+
+BorrarUsuario --> VerificarUsuario
+note right of VerificarUsuario
+ El sistema verifica la identidad 
+ del usuario/administrador
+end note
+
+
+VerificarUsuario --> UsuarioPropio
+VerificarUsuario --> Administrador
+
+UsuarioPropio --> ConfirmarBorrado : Confirmación
+
+
+Administrador --> SeleccionarUsuario : Seleccionar Usuario a Borrar
+note right of SeleccionarUsuario
+ El administrador selecciona 
+ el usuario que desea eliminar
+end note
+
+SeleccionarUsuario --> ConfirmarBorrado : Confirmación
+note left of ConfirmarBorrado
+ Se solicita confirmación 
+ para eliminar la cuenta 
+ del usuario seleccionado
+end note
+
+ConfirmarBorrado --> BorrarCuenta
+note right of BorrarCuenta
+ Se procede a eliminar la cuenta 
+ del usuario seleccionado
+end note
+
+BorrarCuenta --> [*] : Cuenta Eliminada
+
+@enduml

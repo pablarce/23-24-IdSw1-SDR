@@ -1,0 +1,14 @@
+@startuml
+hide empty description
+[*] --> ElegirMetodoPago
+ElegirMetodoPago --> PagoConTarjeta
+ElegirMetodoPago --> PagoConBonos
+PagoConTarjeta --> ProcesarPago : Procesar pago con tarjeta
+PagoConBonos --> ProcesarPago : Procesar pago con bonos
+ProcesarPago --> ConfirmarReserva : Pago exitoso
+ProcesarPago --> CancelarPago : Pago fallido
+ConfirmarReserva --> ReservaExitosa : Reserva confirmada
+CancelarPago --> PagoFallido : Pago cancelado o fallido
+PagoFallido --> ElegirMetodoPago : Reintentar pago
+@enduml
+

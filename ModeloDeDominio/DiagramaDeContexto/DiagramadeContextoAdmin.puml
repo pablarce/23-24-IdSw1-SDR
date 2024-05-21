@@ -1,0 +1,106 @@
+@startuml
+
+
+hide empty description
+
+[*] --> INICIO
+INICIO --> BookingUneat
+note on link
+    Iniciar Sesión
+end note
+
+BookingUneat --> [*]
+note on link
+    Cerar Sesión
+end note
+
+state BookingUneat {
+    [*] --> PantallaPrincipal
+    note on link
+        Diferente pagina para
+        cada tipo de usuario
+    end note
+
+    PantallaPrincipal --> GestionarBonos
+    note on link
+        Leer Bonos
+    end note
+    
+    GestionarBonos --> GestionarBonos
+    note on link
+        Crear Bonos
+        Actualizar Bonos
+        Borrar Bonos
+        Leer Bonos
+    end note
+    GestionarBonos --> PantallaPrincipal
+    note on link
+        Regresar a inicio
+    end note
+
+    PantallaPrincipal --> GestionarReservas
+    note on link
+        Ver Historial de Reservas
+    end note
+
+    GestionarReservas --> PantallaPrincipal
+    note on link
+        Regresar a inicio
+    end note
+
+    PantallaPrincipal --> GestionarUsuarios
+    note on link
+        Borrar Usuarios
+    end note
+    GestionarUsuarios --> GestionarUsuarios
+    note on link
+        Borrar Usuarios
+    end note
+    GestionarUsuarios --> PantallaPrincipal
+    note on link
+        Regresar a inicio
+    end note
+
+    PantallaPrincipal --> GestionarPistas
+    note on link
+        Leer Hoarios de Pistas
+    end note
+    GestionarPistas--> GestionarPistas
+    note on link
+        Borrar Pistas
+        Crear Pistas
+        Actualizar Pistas
+        Leer Pistas
+        Actualizar Horarios de Pistas
+    end note
+    GestionarPistas --> PantallaPrincipal
+    note on link
+        Regresar a inicio
+    end note
+
+    PantallaPrincipal --> GestionarPagos
+    note on link
+        Ver Historial de Pagos
+    end note
+    GestionarPagos --> PantallaPrincipal
+    note on link
+        Regresar a inicio
+    end note
+
+    PantallaPrincipal --> GestionarNotificaciones
+    note on link
+        Leer Notificaciones
+    end note
+    GestionarNotificaciones --> GestionarNotificaciones
+    note on link
+        Crear Notificaciones
+        Actualizar Notificaciones
+        Borrar Notificaciones
+        Leer Notificaciones
+    end note
+    GestionarNotificaciones --> PantallaPrincipal
+    note on link
+        Regresar a inicio
+    end note
+}
+@enduml
