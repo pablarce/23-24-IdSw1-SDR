@@ -1,0 +1,56 @@
+@startuml
+
+[*] --> VerNotificacionesPendientes
+note right of VerNotificacionesPendientes
+ El sistema muestra las notificaciones 
+ pendientes de envío al administrador
+end note
+
+VerNotificacionesPendientes --> SeleccionarNotificacion
+note right of SeleccionarNotificacion
+ El administrador selecciona la notificación 
+ que desea enviar
+end note
+
+SeleccionarNotificacion --> SeleccionarDestinatario
+note right of SeleccionarDestinatario
+ El administrador selecciona el destinatario 
+ al cual enviar la notificación
+end note
+
+SeleccionarDestinatario --> EnviarNotificacion
+note right of EnviarNotificacion
+ El sistema envía la notificación al 
+ destinatario seleccionado
+end note
+
+EnviarNotificacion --> ConfirmarEnvio : Envío exitoso
+note right of ConfirmarEnvio
+ Después de enviar la notificación, 
+ se confirma al usuario que se ha 
+ enviado con éxito
+end note
+
+EnviarNotificacion --> [*]
+note on link
+**Error de Envío:**
+Se muestra un error al administrador 
+si no se puede enviar la notificación
+y se le recomienda intentarlo más tarde
+end note
+
+ConfirmarEnvio ---> ActualizarEstado
+note  on  link
+Se actualiza el estado de la 
+notificación enviada
+end note
+
+ActualizarEstado --> MostrarConfirmacion
+note right of MostrarConfirmacion
+El sistema muestra al 
+usuario una confirmación 
+del envío de la notificación
+end note
+
+MostrarConfirmacion --> VerNotificacionesPendientes
+@enduml

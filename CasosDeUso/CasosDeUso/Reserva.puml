@@ -1,0 +1,27 @@
+@startuml
+
+left to right direction
+
+actor User as U
+actor Admin as A
+
+
+package Reserva{
+
+    usecase "Realizar Reserva" as UC1
+    usecase "Cancelar Reserva" as UC2
+    usecase "Ver Historial de Reservas" as UC3
+}
+
+U --> UC1
+U -->UC2
+U -->UC3
+
+A-->UC3
+
+
+
+
+
+
+@enduml

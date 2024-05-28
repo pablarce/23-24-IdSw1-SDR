@@ -1,0 +1,31 @@
+@startuml
+
+left to right direction
+
+actor User as U
+actor Admin as A
+
+package Pistas {
+
+     usecase "Leer  Horarios de Pistas" as UC2
+     usecase "Actualizar Horarios de Pistas" as UC3
+
+     usecase "Crear Pistas" as UC5
+     usecase "Leer Pistas" as UC6
+     usecase "Actualizar Pistas" as UC7
+     usecase "Borrar Pistas" as UC8
+}
+
+U -->UC2
+
+A -->UC2
+A -->UC3
+A -->UC5
+A -->UC6
+A -->UC7
+A -->UC8
+
+
+
+
+@enduml

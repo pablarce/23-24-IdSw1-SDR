@@ -1,0 +1,20 @@
+@startuml
+hide empty description
+[*] --> NoLogueado
+NoLogueado --> CrearCuenta : No tiene cuenta
+CrearCuenta --> IngresaDatos
+IngresaDatos --> ValidaDatos
+ValidaDatos --> CuentaCreada : Datos Válidos
+ValidaDatos --> CrearCuenta : Datos Inválidos
+CuentaCreada --> NoLogueado
+NoLogueado --> IngresarCredenciales : Tiene Cuenta
+note right of IngresarCredenciales
+ correo (@alumnos.uneatlantico.es)
+ y contraseña
+end note
+IngresarCredenciales --> ValidarCredenciales 
+ValidarCredenciales --> NoLogueado : Credenciales incorrectas
+ValidarCredenciales --> Logueado : Credenciales correctas
+Logueado --> Sistema : Acceder al sistema
+Sistema --> [*]
+@enduml
