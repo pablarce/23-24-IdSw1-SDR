@@ -1,11 +1,37 @@
 @startuml
 [*] --> Inicio
-Inicio --> Formulario : Usuario accede a la web
+note right on link
+El proceso comienza con el usuario
+accediendo a la web desde la página de inicio.
+end note
+
+Inicio --> Formulario
+note right on link
+El usuario navega a la página del formulario de registro.
+end note
+
 Formulario : DNI\nEmail\nNombre\nNumero de telefono\nCodigo postal
-Formulario --> DatosValidados : Enviar formulario
-DatosValidados : Verificar datos
-DatosValidados --> CuentaCreada : Datos válidos
-DatosValidados --> Formulario : Datos inválidos
-CuentaCreada : Usuario recibe confirmación
+
+Formulario --> DatosValidados 
+note right on link
+El usuario envía el formulario con sus datos para verificación.
+end note
+
+
+DatosValidados --> CuentaCreada 
+note right on link
+Si los datos son válidos, se crea la cuenta del usuario.
+end note
+
+DatosValidados --> Formulario 
+note right on link
+Si los datos no son válidos, el formulario es mostrado
+nuevamente para corrección.
+end note
+
+
 CuentaCreada --> [*]
+note right on link
+El proceso de creación de la cuenta finaliza.
+end note
 @enduml

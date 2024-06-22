@@ -1,43 +1,44 @@
 @startuml
 
 [*] --> BorrarUsuario
-note right of BorrarUsuario
+note right on link
  El usuario/administrador accede a la opción 
  de eliminar un usuario del sistema
 end note
 
 BorrarUsuario --> VerificarUsuario
-note right of VerificarUsuario
+note right on link
  El sistema verifica la identidad 
  del usuario/administrador
 end note
 
-
 VerificarUsuario --> UsuarioPropio
 VerificarUsuario --> Administrador
 
-UsuarioPropio --> ConfirmarBorrado : Confirmación
+UsuarioPropio --> ConfirmarBorrado 
+note right on link
+ Confirmación del usuario para borrar su propia cuenta
+end note
 
-
-Administrador --> SeleccionarUsuario : Seleccionar Usuario a Borrar
-note right of SeleccionarUsuario
+Administrador --> SeleccionarUsuario 
+note right on link
  El administrador selecciona 
  el usuario que desea eliminar
 end note
 
-SeleccionarUsuario --> ConfirmarBorrado : Confirmación
-note left of ConfirmarBorrado
+SeleccionarUsuario --> ConfirmarBorrado
+note right on link
  Se solicita confirmación 
  para eliminar la cuenta 
  del usuario seleccionado
 end note
 
 ConfirmarBorrado --> BorrarCuenta
-note right of BorrarCuenta
+note right on link
  Se procede a eliminar la cuenta 
  del usuario seleccionado
 end note
 
-BorrarCuenta --> [*] : Cuenta Eliminada
+BorrarCuenta --> [*] 
 
 @enduml

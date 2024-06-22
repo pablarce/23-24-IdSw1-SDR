@@ -1,29 +1,39 @@
 @startuml
 title Actualizar Bonos (Admin)
 
-
-
 [*] --> Inicio
-note left of Inicio
+note right on link
  El administrador accede desde la página de inicio
-endnote
+end note
 
-Inicio --> ListaDeBonos : Cargar Bonos
-
-ListaDeBonos --> EditarBonos : Seleccionar Bono
-note right of ListaDeBonos 
+Inicio --> ListaDeBonos 
+note right on link
  El administrador accede a la opción 
  de ver la lista de Bonos
-endnote
+end note
 
-EditarBonos --> BonosActualizados : Confirmar Cambios
-note left of EditarBonos 
- El administrador accede a la opción 
- de editar los bonos creados anteriormente
-endnote
+ListaDeBonos --> EditarBonos
+note right on link
+ El administrador selecciona un bono
+ de la lista para editar
+end note
 
+EditarBonos --> BonosActualizados
+note right on link
+ El administrador confirma los cambios
+ realizados en el bono
+end note
 
-BonosActualizados --> ListaDeBonos : Actualizar Otro
-BonosActualizados --> [*] : Finalizar
+BonosActualizados --> ListaDeBonos
+note right on link
+ El administrador elige actualizar
+ otro bono
+end note
+
+BonosActualizados --> [*]
+note right on link
+ El administrador finaliza el proceso
+ de actualización de bonos
+end note
 
 @enduml
