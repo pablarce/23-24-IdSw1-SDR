@@ -1,27 +1,35 @@
 @startuml 
 [*] --> UsuarioSolicitaPista
 UsuarioSolicitaPista -d-> SistemaMuestraPista
-note left of UsuarioSolicitaPista
+note on link
     El usuario solicita una pista
 end note
 SistemaMuestraPista -d-> UsuarioSolicitaBorrarPista
-note left of SistemaMuestraPista
+note on link
     El sistema muestra la pista
 end note
 SistemaMuestraPista -d-> Error
+note on link
+    El sistema no encuentra la pista
+end note
 UsuarioSolicitaBorrarPista -d-> SistemaBorraPista
-note left of UsuarioSolicitaBorrarPista
+note on link
     El usuario solicita
     borrar la pista
 end note
 SistemaBorraPista -r-> Error
-note left of SistemaBorraPista
-    El sistema borra la pista
+note on link
+    El sistema no puede 
+    eliminar la pista
 end note
+
 Error -d-> [*]
-SistemaBorraPista -d-> [*]
 note on link
     **Fin**
+end note
+SistemaBorraPista -d-> [*]
+note on link
+    El sistema borra la pista
 end note
 
 @enduml

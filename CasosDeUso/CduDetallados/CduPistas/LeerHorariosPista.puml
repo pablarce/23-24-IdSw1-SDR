@@ -1,18 +1,15 @@
 @startuml
 [*] --> Inicio
 Inicio --> PaginaPrincipal
-
-PaginaPrincipal --> Reservas : ver reservas
-Reservas --> [*]
-
-
-note right of Inicio
-Usuario accede a la aplicación
+note on link
+    Usuario accede a la aplicación
 end note
-note right of PaginaPrincipal
+PaginaPrincipal --> Reservas
+note on link
 Usuario selecciona "ver estados de pistas"
 end note
-note right of Reservas
+Reservas --> [*]
+note on link
 Usuario visualiza las reservas"
 end note
 @enduml
