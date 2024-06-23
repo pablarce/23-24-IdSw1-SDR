@@ -18,4 +18,4 @@
 
 ---
 
-![Imagen](imagenes/Prototipos.png)
+![Imagen](imagenes/modelosUML/Prototipos.png)
