@@ -25,14 +25,6 @@ note right of ConfirmarCompra
  de los bonos al usuario
 end note
 
-RealizarPago --> [*]
-note on link
-**Pago Fallido:**
-Se muestra un error al usuario
-y se le recomienda que vuelva
-a intentar más tarde
-end note
-
 ConfirmarCompra ---> MostrarConfirmacion
 note  on  link
 Se añaden los fondos 
@@ -44,5 +36,16 @@ usuario una confirmación
 de la compra de bonos
 end note
 
+RealizarPago --> NotificarFalloPago : Pago fallido
+note right of NotificarFalloPago
+El sistema muestra un 
+mensaje de error al usuario 
+y le recomienda que 
+vuelva a intentar más tarde
+end note
+
+NotificarFalloPago --> [*]
+
 MostrarConfirmacion --> [*]
+
 @enduml
