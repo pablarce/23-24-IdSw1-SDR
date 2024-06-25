@@ -24,10 +24,7 @@ note right of EnviarNotificacion
  destinatario seleccionado
 end note
 
-EnviarNotificacion --> ConfirmarEnvio
-note on link
-Envío exitoso
-end note
+EnviarNotificacion --> ConfirmarEnvio : Envío exitoso
 note right of ConfirmarEnvio
  Después de enviar la notificación, 
  se confirma al usuario que se ha 

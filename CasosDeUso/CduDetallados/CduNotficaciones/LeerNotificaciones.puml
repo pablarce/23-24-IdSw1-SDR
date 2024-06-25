@@ -18,19 +18,13 @@ note right of LeerNotificacion
  de la notificación seleccionada
 end note
 
-LeerNotificacion --> ConfirmarLectura
-note on link
-Leer notificación
-end note
+LeerNotificacion --> ConfirmarLectura : Leer
 note right of ConfirmarLectura
  El usuario confirma que ha leído 
  la notificación
 end note
 
-ConfirmarLectura --> MostrarConfirmacion
-note on link
-Notificación confirmada
-end note
+ConfirmarLectura --> MostrarConfirmacion : Confirmación de lectura
 note right of MostrarConfirmacion
  El sistema muestra una confirmación 
  al usuario de que la notificación 
