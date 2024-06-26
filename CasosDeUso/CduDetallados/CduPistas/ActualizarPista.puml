@@ -11,7 +11,7 @@ note on link
 end note
 SistemaMuestraPista -[#red]> [*]
 note on link
-    La pista no se puede
+    La **pista** no se puede
     mostrar ya que se ha 
     producido un error
 end note
