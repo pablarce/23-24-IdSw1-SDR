@@ -1,25 +1,25 @@
 @startuml
 
 [*] --> ComprarBonos
-note right of ComprarBonos
- El usuario accede a la opción 
- de comprar bonos en el sistema
+note on link
+ El **usuario** accede a la opción 
+ de comprar bonos en el **sistema**
 end note
 
 ComprarBonos --> SeleccionarCantidad
-note right of SeleccionarCantidad
+note on link
  El usuario elige la cantidad 
  de bonos que desea comprar
 end note
 
 SeleccionarCantidad --> RealizarPago
-note right of RealizarPago
+note on link
  El sistema procesa el pago 
  de los bonos seleccionados
 end note
 
-RealizarPago --> ConfirmarCompra : Pago exitoso
-note right of ConfirmarCompra
+RealizarPago --> ConfirmarCompra
+note on link
  Después de verificar el 
  pago, se confirma la compra 
  de los bonos al usuario
@@ -29,15 +29,14 @@ ConfirmarCompra ---> MostrarConfirmacion
 note  on  link
 Se añaden los fondos 
 a la cuenta del usuario
-end note
-note right of MostrarConfirmacion
+
 El sistema muestra al 
 usuario una confirmación 
 de la compra de bonos
 end note
 
-RealizarPago --> NotificarFalloPago : Pago fallido
-note right of NotificarFalloPago
+RealizarPago --> NotificarFalloPago
+note on link
 El sistema muestra un 
 mensaje de error al usuario 
 y le recomienda que 
