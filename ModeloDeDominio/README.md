@@ -39,8 +39,8 @@
 
 | Imagen                                     |                                 |
 | ------------------------------------------ | -------------------------------------- |
-| ![Texto alternativo](DiagramaDeEstados/Pago/DiagramaEstadosPago.svg) | [Diagrama de estados (Pagos)](ModeloDeDominio/DiagramaDeEstados/Pago/DiagramaEstadosPago.svg) |
-| ![Texto alternativo](DiagramaDeEstados/Pista/DiagramaEstadosPista.svg) | [Diagrama de estados (Pista)](DiagramaDeEstados/Pista/DiagramaEstadosPista.svg) |
-| ![Texto alternativo](DiagramaDeEstados/Sistema/DiagramaEstadosSistema.svg) | [Diagrama de estados (Sistema)](ModeloDeDominio/DiagramaDeEstados/Sistema/DiagramaEstadosSistema.svg) |
-| ![Texto alternativo](DiagramaDeEstados/Usuario/DiagramaEstadosUsuario.svg) | [Diagrama de estados (Usuario)](ModeloDeDominio/DiagramaDeEstados/Usuario/DiagramaEstadosUsuario.svg) |
+| ![Texto alternativo](DiagramaDeEstados/Pago/DiagramaEstadosPago.svg) | [Diagrama de estados (Pagos)](DiagramaDeEstados/Pago/DiagramaEstadosPago.txt) |
+| ![Texto alternativo](DiagramaDeEstados/Pista/DiagramaEstadosPista.svg) | [Diagrama de estados (Pista)](DiagramaDeEstados/Pista/DiagramaEstadosPista.txt) |
+| ![Texto alternativo](DiagramaDeEstados/Sistema/DiagramaEstadosSistema.svg) | [Diagrama de estados (Sistema)](DiagramaDeEstados/Sistema/DiagramaEstadosSistema.txt) |
+| ![Texto alternativo](DiagramaDeEstados/Usuario/DiagramaEstadosUsuario.svg) | [Diagrama de estados (Usuario)](DiagramaDeEstados/Usuario/DiagramaEstadosUsuario.txt) |
 
