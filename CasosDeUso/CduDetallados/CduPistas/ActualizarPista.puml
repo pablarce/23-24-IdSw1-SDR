@@ -1,38 +1,38 @@
 @startuml 
 [*] --> UsuarioSolicitaPista
-UsuarioSolicitaPista -d-> SistemaMuestraPista
+UsuarioSolicitaPista --> SistemaMuestraPista
 note on link
-    El usuario solicita una pista
+    El **Administrador** selecciona la pista que desea ver
 end note
-SistemaMuestraPista -d-> UsuarioIntroduceModificaciones
+SistemaMuestraPista --> UsuarioIntroduceModificaciones
 note on link
     El sistema muestra la pista
+    al **Administrador**
 end note
-SistemaMuestraPista -d-> Error
+SistemaMuestraPista -[#red]> [*]
 note on link
-    La pista no se puede mostrar
+    La pista no se puede
+    mostrar ya que se ha 
+    producido un error
 end note
-UsuarioIntroduceModificaciones -d-> SistemaModificaPista
+UsuarioIntroduceModificaciones --> SistemaModificaPista
 note on link
-    El usuario introduce las 
-    modificaciones necesarias
+    El **Administrador** introduce 
+    las modificaciones 
+    necesarias
 end note
-SistemaModificaPista -d-> SistemaMuestraPistaModificada
+SistemaModificaPista --> SistemaMuestraPistaModificada
 note on link
-    El sistema modifica 
-    y muestra la pista
+    El **sistema** modifica 
+    la pista
 end note
-SistemaModificaPista -r-> Error
+SistemaModificaPista --> [*]
 note on link
-    El sistema no puede modificar la pista
+    El **sistema** no puede 
+    modificar la pista ya que
+    se ha producido un error
 end note
-Error -d-> [*]
-note on link
-    **Fin**
-end note
-SistemaMuestraPistaModificada -d-> [*]
-note on link
-    **Fin**
-end note
+
+SistemaMuestraPistaModificada ---> [*]
 
 @enduml
