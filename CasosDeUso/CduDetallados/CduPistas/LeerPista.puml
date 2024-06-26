@@ -2,29 +2,19 @@
 [*] --> UsuarioSolicitaPistas
 UsuarioSolicitaPistas -d-> SistemaMuestraPistas
 note on link
-    El usuario solicita las pistas al sistema
+    El **usuario** solicita las pistas al **sistema**
 end note
-SistemaMuestraPistas -d-> UsuarioDecideProximaOperacion
+
+SistemaMuestraPistas -[#red]---> [*]
 note on link
-    El sistema muestra las pistas al usuario
-    para que este decida que hacer a continuacion
-end note
-UsuarioDecideProximaOperacion --> UsuarioSolicitaPistas
-note on link
-    **Recarga**
-end note
-SistemaMuestraPistas -d-> Error
-note on link
-    El sistema no puede mostrar
+    El **sistema** no puede mostrar
     las pistas al usuario
 end note
-Error -d-> [*]
+
+SistemaMuestraPistas --> [*]
 note on link
-    **Fin**
-end note
-UsuarioDecideProximaOperacion -d-> [*]
-note on link
-    El usuario decidira que hacer a continuacion
+    El **sistema** muestra las pistas
+    al usuario
 end note
 
 @enduml
