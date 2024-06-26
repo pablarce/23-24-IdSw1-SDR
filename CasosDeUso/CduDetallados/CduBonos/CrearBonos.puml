@@ -3,32 +3,32 @@ title Crear Bonos (Admin)
 
 [*] --> Inicio
 note right on link
-El administrador empieza desde la 
+El **administrador** empieza desde la 
 página de inicio de la aplicación
 end note
 
 Inicio --> FormularioDeCreacion
 note right on link
-El administrador navega al formulario
+El **administrador** navega al formulario
 para iniciar la creación de un nuevo bono
 end note
 
 FormularioDeCreacion --> ValidacionDatos
 note right on link
-El administrador accede al formulario
+El **administrador** accede al formulario
 para crear un nuevo bono
 end note
 
 ValidacionDatos --> BonoCreado
 note right on link
-El administrador completa todos
+El **administrador**completa todos
 los parámetros necesarios en el formulario 
 para crear el bono
 end note
 
 BonoCreado --> [*]
 note right on link
-El administrador finaliza el proceso de
+El **administrador** finaliza el proceso de
 creación de bonos
 end note
 

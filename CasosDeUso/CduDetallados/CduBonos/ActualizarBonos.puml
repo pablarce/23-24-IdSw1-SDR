@@ -3,36 +3,36 @@ title Actualizar Bonos (Admin)
 
 [*] --> Inicio
 note right on link
- El administrador accede desde la página de inicio
+ El **administrador** accede desde la página de inicio
 end note
 
 Inicio --> ListaDeBonos 
 note right on link
- El administrador accede a la opción 
+ El **administrador** accede a la opción 
  de ver la lista de Bonos
 end note
 
 ListaDeBonos --> EditarBonos
 note right on link
- El administrador selecciona un bono
+ El **administrador** selecciona un bono
  de la lista para editar
 end note
 
 EditarBonos --> BonosActualizados
 note right on link
- El administrador confirma los cambios
+ El **administrador** confirma los cambios
  realizados en el bono
 end note
 
 BonosActualizados --> ListaDeBonos
 note right on link
- El administrador elige actualizar
+ El **administrador** elige actualizar
  otro bono
 end note
 
 BonosActualizados --> [*]
 note right on link
- El administrador finaliza el proceso
+ El **administrador** finaliza el proceso
  de actualización de bonos
 end note
 
