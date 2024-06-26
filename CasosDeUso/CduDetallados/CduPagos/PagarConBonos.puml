@@ -1,7 +1,7 @@
 @startuml
 
 [*] --> MetodoDePago
-note right of MetodoDePago
+note on link
  El usuario escoge que 
  método de pago usar
  
@@ -10,48 +10,41 @@ end note
 
 MetodoDePago --> RealizarPago
 note on link
-Se verifica que el usuario
-posea fondos suficientes
-para realizar el pago
-end note
-note right of RealizarPago
-Se deducen automáticamente 
-los fondos correspondientes 
-al valor de la reserva
+El **sistema** verifica que el **usuario**
+tenga Bonos para realizar el pago y 
+el **sistema** los descuenta de su cuenta
 end note
 
-RealizarPago --> ConfirmarReserva : Pago exitoso
-note left of ConfirmarReserva
- Después de verificar el 
- pago, se le envía una 
- notificación con el resumen 
- de la reserva al usuario
+RealizarPago --> ConfirmarReserva  
+note on link
+    El **sistema** muestra 
+    un mensaje de confirmación 
+    al **usuario**
 end note
 
-RealizarPago --> NotificarPagoFallido : Pago fallido
-note right of NotificarPagoFallido
- El sistema muestra un 
+RealizarPago -[#red]-> NotificarPagoFallido  
+note on link
+ El **sistema** muestra un 
  mensaje de error al usuario, 
- quien recibe la recomendación 
- de intentarlo nuevamente más tarde
 end note
 
-RealizarPago --> NotificarFondosInsuficientes : Fondos insuficientes
-note right of NotificarFondosInsuficientes
- El sistema muestra un 
- error al usuario indicando 
- que no dispone de suficientes fondos
+RealizarPago -[#red]-> NotificarFondosInsuficientes 
+note on link
+    El **sistema** muestra un 
+    mensaje de error al **usuario**, 
+    indicando que no tiene
+    suficientes fondos
 end note
 
-NotificarPagoFallido --> [*]
+NotificarPagoFallido -[#red]-> [*]
 
-NotificarFondosInsuficientes --> [*]
+NotificarFondosInsuficientes -[#red]-> [*]
 
 ConfirmarReserva --> [*]
 note on link
- Añadir reserva 
- a horarios de 
- la pista
+    El **sistema** añade la reserva
+    a la cuenta del **usuario**
+
 end note
 
 @enduml
