@@ -8,43 +8,39 @@ end note
 
 ComprarBonos --> SeleccionarCantidad
 note on link
- El usuario elige la cantidad 
+ El **usuario** elige la cantidad 
  de bonos que desea comprar
 end note
 
 SeleccionarCantidad --> RealizarPago
 note on link
- El sistema procesa el pago 
+ El **sistema** procesa el pago 
  de los bonos seleccionados
 end note
 
 RealizarPago --> ConfirmarCompra
 note on link
- Después de verificar el 
- pago, se confirma la compra 
- de los bonos al usuario
+    El **sistema** confirma la compra 
+    de los bonos al **usuario**
 end note
 
-ConfirmarCompra ---> MostrarConfirmacion
+ConfirmarCompra --> MostrarConfirmacion
 note  on  link
-Se añaden los fondos 
-a la cuenta del usuario
-
-El sistema muestra al 
-usuario una confirmación 
-de la compra de bonos
+    El **sistema** muestra un mensaje 
+    de confirmación y se añaade los
+    bonos a la cuenta del **usuario**
 end note
 
-RealizarPago --> NotificarFalloPago
+RealizarPago -[#red]-> NotificarFalloPago
 note on link
-El sistema muestra un 
-mensaje de error al usuario 
-y le recomienda que 
-vuelva a intentar más tarde
+    El **sistema** notifica al 
+    **usuario** que el pago no 
+    se ha podido realizar
+    debido a un error
 end note
 
-NotificarFalloPago --> [*]
+NotificarFalloPago -[#red]> [*]
 
-MostrarConfirmacion --> [*]
+MostrarConfirmacion ---> [*]
 
 @enduml
