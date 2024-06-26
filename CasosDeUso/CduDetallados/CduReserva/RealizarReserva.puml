@@ -1,30 +1,35 @@
 @startuml
 title Realizar Reserva
 
-[*] --> Inicio
-note right of Inicio
- El usuario inicia el proceso de reserva. Solo estudiantes de la universidad pueden hacer reservas.
+[*] --> VerificarUltimaReserva
+note on link
+El **sistema** verifica que el 
+**usuario** no tengo otra 
+reserva en los próximos 7 días.
 end note
 
-Inicio --> VerificarEstudiante : Iniciar Proceso
-VerificarEstudiante --> NoEsEstudiante : No Es Estudiante
-VerificarEstudiante --> VerificarUltimaReserva : Es Estudiante
-note right of VerificarUltimaReserva
- Se verifica la fecha de la última reserva: no se permite reservar si la última fue hace menos de 7 días.
+VerificarUltimaReserva --> SeleccionarPista
+note on link
+El **sistema** muestra las canchas disponibles.
+end note
+SeleccionarPista --> ElegirFechaHora
+note on link
+El **sistema** muestra los horarios disponibles.
+end note
+ElegirFechaHora --> ConfirmacionReserva
+note on link
+ El **usuario** confirma los detalles 
+ de la reserva y el **sistema** verifica
+ la disponibilidad de la cancha y que 
+ todos los datos sean correctos.
 end note
 
-VerificarUltimaReserva --> ReservaDemasiadoPronto : Menos de 7 Días
-VerificarUltimaReserva --> SeleccionarCancha : Tiempo Suficiente
-SeleccionarCancha --> ElegirFechaHora : Escoger Disponibilidad
-
-ElegirFechaHora --> ConfirmacionReserva : Confirmar Datos
-note right of ConfirmacionReserva
- El usuario confirma los detalles de la reserva, finalizando con la validación de la misma.
+ConfirmacionReserva --> ReservaConfirmada
+note on link
+El **sistema** confirma la 
+reserva al **usuario**.
 end note
-
-ConfirmacionReserva --> ReservaConfirmada : Validar
-ReservaConfirmada --> [*] : Finalizar
-NoEsEstudiante --> [*] : Finalizar
-ReservaDemasiadoPronto --> [*] : Finalizar
+ReservaConfirmada --> [*]
+VerificarUltimaReserva -[#red]> [*]
 
 @enduml

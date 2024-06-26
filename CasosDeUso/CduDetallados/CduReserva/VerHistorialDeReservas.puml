@@ -2,15 +2,21 @@
 title Ver Historial de Reservas
 
 [*] --> CargarHistorial
-note right of CargarHistorial
- El sistema recupera todas las reservas previas asociadas al usuario.
+note on link
+ El **sistema** recupera todas las 
+ reservas previas asociadas al **usuario**.
+
+ si el **usuario** es **administrador** se le 
+ permite ver todas las reservas.
 end note
 
-CargarHistorial --> MostrarHistorial : Mostrar Datos
-note right of MostrarHistorial
- Se presentan al usuario todas sus reservas pasadas, permitiendo visualizar detalles de cada una.
+CargarHistorial --> MostrarHistorial
+note on link
+ El **sistema** le muestra al **usuario** 
+ todas sus reservas pasadas con 
+ todos sus datos asociados.
 end note
 
-MostrarHistorial --> [*] : Finalizar
+MostrarHistorial --> [*]
 
 @enduml

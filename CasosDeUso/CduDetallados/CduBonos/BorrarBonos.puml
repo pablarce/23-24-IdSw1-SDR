@@ -2,21 +2,34 @@
 title Borrar Bonos (Admin)
 
 [*] --> Inicio
-note right of Inicio
-El administrador empieza desde la 
+note right on link
+El **administrador** empieza desde la 
 página de inicio de la aplicación
 end note
 
-Inicio --> ListaDeBonos : Cargar Bonos
+Inicio --> ListaDeBonos
 
-ListaDeBonos --> ConfirmarBorrado : Seleccionar Bono
-note left of ListaDeBonos 
-El administrador accede a la opción de
-ver la lista de bonos que ha creado
-endnote
+ListaDeBonos --> ConfirmarBorrado 
+note right on link
+El **administrador** accede a la lista de bonos
+y selecciona un bono para borrar
+end note
 
 ConfirmarBorrado --> BonoBorrado
-BonoBorrado --> ListaDeBonos : Borrar Otro
-BonoBorrado --> [*] : Finalizar
+note right on link
+El **administrador** confirma la eliminación
+del bono seleccionado
+end note
+
+BonoBorrado --> ListaDeBonos
+note right on link
+El **administrador** elige borrar otro bono
+end note
+
+BonoBorrado --> [*] 
+note right on link
+El **administrador** finaliza el proceso de
+borrado de bonos
+end note
 
 @enduml

@@ -2,33 +2,43 @@
 title Cancelar Reserva
 
 [*] --> SeleccionDeReserva
-note right of SeleccionDeReserva
- El usuario selecciona la reserva que desea cancelar
+note on link
+ El **usuario** selecciona la 
+ reserva que desea cancelar
 end note
 
-SeleccionDeReserva --> VerificarCondiciones : Elegir Reserva
-note right of VerificarCondiciones
- El sistema verifica si la cancelación cumple con las políticas:
- - No se permite cancelar el mismo día, a menos que el clima no sea óptimo.
- - Se permite la cancelación con al menos 24 horas de anticipación.
+SeleccionDeReserva --> VerificarCondiciones
+note on link
+ El **sistema** verifica si la cancelación cumple con las políticas:
+
+ - No se permite cancelar el mismo día, 
+   a menos que el clima no sea óptimo.
+
+ - Se permite la cancelación con al menos 
+   24 horas de anticipación.
 end note
 
-VerificarCondiciones --> NoSePuedeCancelar 
-note left of NoSePuedeCancelar
- La reserva no se puede cancelar debido a que es el mismo día y 
- las condiciones climáticas son óptimas.
+VerificarCondiciones ---> NoSePuedeCancelar 
+note on link
+ El **sistema** informa al **usuario** 
+ que no se puede cancelar
+
 end note
 
 VerificarCondiciones --> ConfirmacionCancelar
-note right of ConfirmacionCancelar
- El usuario procede a confirmar la cancelación de la reserva
- bajo las condiciones permitidas.
+note on link
+El **sistema** le permite al 
+**usuario** realizar la cancelación
 end note
 
-ConfirmacionCancelar --> ReservaCancelada : Confirmar Cancelación
+ConfirmacionCancelar --> ReservaCancelada
+note on link
+El **sistema** confirma al **usuario**
+que la reserva ha sido cancelada
+end note
 
 
-NoSePuedeCancelar --> [*] : Finalizar
-ReservaCancelada --> [*] : Finalizar
+NoSePuedeCancelar ---> [*] 
+ReservaCancelada ---> [*]
 
 @enduml

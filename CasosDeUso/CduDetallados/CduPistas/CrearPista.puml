@@ -1,39 +1,39 @@
 @startuml 
-[*] -r-> UsuarioSolicitaMenuCrearPista
-UsuarioSolicitaMenuCrearPista -d-> SistemaMuestraMenuCrearPista
-note right of UsuarioSolicitaMenuCrearPista
-    El usuario solicita acceder 
-    al menu de crear pista
+[*] --> UsuarioSolicitaMenuCrearPista
+UsuarioSolicitaMenuCrearPista ---> SistemaMuestraMenuCrearPista
+note on link
+    El **administrador** solicita acceder 
+    al menu de crear 
+    pista
 end note
 SistemaMuestraMenuCrearPista -r-> UsuarioIntroduceDatosPista
-note left of SistemaMuestraMenuCrearPista
-    El sistema muestra
+note on link
+    El **sistema** muestra
     el menu  para introducir
     los datos de la pista
 end note
 UsuarioIntroduceDatosPista -d-> UsuarioSolicitaCrearPista 
-note right of UsuarioIntroduceDatosPista
-    El usuario introduce los datos
+note on link
+    El **administrador** introduce los datos
     de la pista
 end note
 UsuarioSolicitaCrearPista -r-> SistemaCreaPista
-note left of UsuarioSolicitaCrearPista
-    El usuario solicita 
+note on link
+    El **administrador** solicita 
     crear la pista
 end note
-SistemaCreaPista -d-> SistemaMuestraNuevaPista
-note right of SistemaCreaPista
-    El sistema 
-    crea la pista
-end note
-SistemaCreaPista -d-> Error
-Error-d-> [*]
-SistemaMuestraNuevaPista -d-> [*]
-note left of SistemaMuestraNuevaPista
-    El sistema muestra 
+SistemaCreaPista --> SistemaMuestraNuevaPista
+note on link
+    El **sistema** 
+    crea y muestra
     la nueva pista
 end note
-note on link 
-    **Fin**
+SistemaCreaPista -[#red]->  [*]
+note on link
+    El **sistema** muestra un error
+    al crear la pista
 end note
+
+SistemaMuestraNuevaPista --> [*]
+
 @enduml 

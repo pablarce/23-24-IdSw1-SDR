@@ -1,29 +1,34 @@
 @startuml
-[*] --> Inicio
-Inicio --> PaginaPrincipal
-PaginaPrincipal --> EditarHorarios : Usuario selecciona "Editar Horarios"
-EditarHorarios --> ConfirmarEdicion : "editar horarios"
-ConfirmarEdicion --> Error : Confirmación fallida
-Error --> EditarHorarios : Volver a intentar editar
-ConfirmarEdicion --> NotificarUsuarios : Confirmación exitosa
-NotificarUsuarios --> [*] : Notificación exitosa
+[*] -->  EditarHorarios
+note on link
+El **Administrador** edita el horario 
+de la Pista
+end note
+EditarHorarios --> ConfirmarEdicion
+note on link
+El **sistema** confirma 
+la edicióndel horario 
+de la Pista
+end note
 
+EditarHorarios -[#red]> [*]
+note on link
+El **sistema** notifica al 
+**Administrador** que se 
+ha producido un Error
+end note
+ConfirmarEdicion ---> NotificarUsuarios
+note on link
+El **sistema** notifica a los usuarios
+que se ha producido un cambio en el horario
+de la Pista
+end note
+NotificarUsuarios --> [*] 
+note on link
+El **sistema** verifica que el cambio
+de horario genera conflictos con las 
+reservas de los **usuarios**, si es así,
+notifica a los **usuarios**
+end note
 
-note right of Inicio
-Usuario accede a la aplicación
-end note
-note right of PaginaPrincipal
-Usuario selecciona "Editar horarios de pistas"
-end note
-note right of EditarHorarios
-Aqui el usuario ha de seleccionar una pista,
- y un nuevo horario de apertura
-end note
-note right of Error
-Error de permisos o de conexión
-end note
-note left of NotificarUsuarios
-Verificar si alguna reserva ha sido afectada
-por esta modificación, notificar a los usuarios
-end note
 @enduml

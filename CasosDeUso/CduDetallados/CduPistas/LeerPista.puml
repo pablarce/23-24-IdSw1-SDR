@@ -1,27 +1,20 @@
 @startuml 
 [*] --> UsuarioSolicitaPistas
 UsuarioSolicitaPistas -d-> SistemaMuestraPistas
-note left of UsuarioSolicitaPistas
-    El usuario solicita las pistas al sistema
+note on link
+    El **usuario** solicita las pistas al **sistema**
 end note
 
-SistemaMuestraPistas -d-> UsuarioDecideProximaOperacion
-note left of SistemaMuestraPistas
-    El sistema muestra las pistas al usuario
-    para que este decida que hacer a continuacion
-end note
-UsuarioDecideProximaOperacion --> UsuarioSolicitaPistas
+SistemaMuestraPistas -[#red]---> [*]
 note on link
-    **Recarga**
+    El **sistema** no puede mostrar
+    las pistas al usuario
 end note
-SistemaMuestraPistas -d-> Error
-Error -d-> [*]
+
+SistemaMuestraPistas --> [*]
 note on link
-    **Fin**
-end note
-UsuarioDecideProximaOperacion -d-> [*]
-note left of UsuarioDecideProximaOperacion
-    El usuario decidira que hacer a continuacion
+    El **sistema** muestra las pistas
+    al usuario
 end note
 
 @enduml
