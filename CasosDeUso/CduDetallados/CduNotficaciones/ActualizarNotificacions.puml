@@ -1,46 +1,44 @@
 @startuml
 
 [*] --> VerNotificaciones
-note right of VerNotificaciones
- El administrador accede a la opción 
+note on link
+ El **administrador** accede a la opción 
  de ver sus notificaciones
+
+ El **sistema** muestra las notificaciones
 end note
 
 VerNotificaciones --> SeleccionarNotificacion
-note right of SeleccionarNotificacion
- El administrador selecciona la notificación 
+note on link
+ El **administrador** selecciona la notificación 
  que desea actualizar
 end note
 
 SeleccionarNotificacion --> ActualizarEstado
-note right of ActualizarEstado
- El sistema actualiza el estado 
+note on link
+ El **sistema** actualiza el estado 
  de la notificación seleccionada
 end note
 
-ActualizarEstado --> ConfirmarActualizacion : Actualización exitosa
-note right of ConfirmarActualizacion
- Después de actualizar el estado, 
- se confirma al administrador que la 
- actualización se ha realizado con éxito
+ActualizarEstado --> ConfirmarActualizacion
+note on link
+ El **sistema** actualiza el estado 
+ de la notificación
 end note
 
 ActualizarEstado --> [*]
 note on link
 **Error de Actualización:**
-Se muestra un error al administrador 
-si no se puede actualizar la notificación
-y se le recomienda intentarlo más tarde
+el **sistema** le muestra un error al 
+**administrador** si no se puede actualizar 
+la notificación y se le recomienda intentarlo 
+más tarde
 end note
 
 ConfirmarActualizacion ---> MostrarConfirmacion
-note  on  link
-Se muestra al administrador la confirmación 
-de la actualización de la notificación
-end note
-note right of MostrarConfirmacion
-El sistema muestra al 
-administrador una confirmación 
+note on link
+El **sistema** muestra al 
+**administrador** una confirmación 
 de la actualización de la notificación
 end note
 
