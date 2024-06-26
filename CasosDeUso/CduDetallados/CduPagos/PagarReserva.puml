@@ -22,36 +22,29 @@ note on link
   - Nombre del Titular
   - Fecha de Caducidad
   - Código de Seguridad
-end note
-note right of RealizarPago
- Se efectúa el pago con el 
- TPV virtual para efectuar 
- el pago
+
+ El **sistema** efectua el pago
+ con el TPV virtual
 end note
 
-RealizarPago --> ConfirmarReserva : Pago exitoso
-note left of ConfirmarReserva
- Después de verificar el 
- pago, se le envía una 
- notificación con el resumen 
- de la reserva al usuario
-end note
-
-RealizarPago --> NotificarPagoFallido : Pago fallido
-note right of NotificarPagoFallido
- El sistema muestra un 
- mensaje de error al usuario, 
- quien recibe la recomendación 
- de intentarlo nuevamente más tarde
-end note
-
-NotificarPagoFallido --> [*]
-
-ConfirmarReserva --> [*]
+RealizarPago ---> ConfirmarReserva 
 note on link
- Añadir reserva 
- a horarios de 
- la pista
+  El **sistema** muestra un mensaje 
+  de confirmación al **usuario**
+end note
+
+RealizarPago --[#red]-> NotificarPagoFallido 
+note on link
+ El **sistema** muestra un 
+ mensaje de error al **usuario**
+end note
+
+NotificarPagoFallido --[#red]-> [*]
+
+ConfirmarReserva ---> [*]
+note on link
+ El **sistema** añade la reserva
+ a la cuenta del **usuario**
 end note
 
 @enduml
